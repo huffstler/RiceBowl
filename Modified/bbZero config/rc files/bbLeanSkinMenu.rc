@@ -1,0 +1,23 @@
+[begin] (bbLeanSkin)
+    [exec] (Toggle Log) {@BBLeanSkin.ToggleLog}
+    [exec] (Toggle Skin) {@BBLeanSkin.ToggleSkin}
+    [sep]
+    [submenu] (Button Order)
+        [exec] (Linux) {@BBLeanSkin.buttonOrder 3-21}
+        [exec] (Windows) {@BBLeanSkin.buttonOrder 4-321}
+        [exec] (Icon) {@BBLeanSkin.buttonOrder 7-321}
+        [exec] (All Buttons) {@BBLeanSkin.buttonOrder 7456-321}
+        [end]
+    [submenu] (Button Glyphs)
+        [exec] (Default Buttons) {@BBLeanSkin.buttonGlyphs default}
+        [sep]
+        [insertpath] {plugins\bbleanskin\buttons >> @BBLeanSkin.buttonGlyphs %1}
+        [end]
+    [sep]
+    [edit] (Edit Settings) {plugins\bbleanskin\bbleanskin.rc}
+    [edit] (Edit Exclusions) {plugins\bbleanskin\exclusions.rc}
+    [edit] (Edit This Menu) {plugins\bbleanskin\bbLeanSkinMenu.rc}
+    [sep]
+    [edit] (Readme) {plugins\bbleanskin\readme.txt}
+    [exec] (About) {@BBLeanSkin.About}
+[end]

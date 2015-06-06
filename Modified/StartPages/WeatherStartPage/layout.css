@@ -1,0 +1,172 @@
+* {
+	outline: none;
+}
+
+body {
+	background: url('images/wallpaper.jpg') no-repeat center center fixed!important;
+	background-size: ;
+}
+
+#main {
+	display: block;
+	width:50%;
+	height: auto;
+	margin-top: 12.5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input {
+	/*Size*/
+	display: block;
+	width: 100%;
+	height: 30px;
+	clear: both;
+	/*Coloring*/
+	background-color: rgba(255, 255, 255, .4);
+	border:solid 1px #000000;
+	font-size:1.8em;
+}
+
+#navigation{
+	display:block;
+	font-family:"Verdana";
+	font-size: 2.5vw;
+	font-weight: lighter;
+	margin-top: 20px;
+}
+
+#category {
+	cursor: pointer;
+}
+
+a {
+	color: rgba(0, 0, 0, .7);
+	text-decoration: none;
+}
+
+a:hover, a.hovered {
+	color: white;
+}
+
+#navigation ul {
+	width: auto;
+	position: relative;
+	text-align: left;
+	list-style-position: inside;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+#navigation > ul > li    {
+	position: relative;
+}
+
+#navigation ul ul {
+	width: 100%;
+	position: absolute;
+	display: inline-block;
+	height: auto;
+	overflow: hidden;
+	text-align: left;
+	list-style-position: inside;
+	list-style-type: none;
+	opacity:0;
+	visibility: hidden;
+	
+	-webkit-transition: all 0.3s ease-in;
+            -moz-transition: all 0.3s ease-in;
+            -o-transition: all 0.3s ease-in;
+            -ms-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+}
+
+#navigation > ul > li > a:hover~ul, #navigation ul ul:hover, #navigation ul ul li a:hover > ul, #navigation > ul > li > a.hovered ul, #navigation > ul > li.hovered ul{
+	left: auto;
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Weather CSS*/
+
+#test {
+	display: block;
+	padding-bottom: 15%;
+	font-size: 1vw;
+}
+
+#currentWeather, .weatherForecastText, .weatherForecastDate{
+	display: none;
+}
+
+.icon {
+	max-width: 100% !important;
+	margin-bottom: -15%;
+}
+
+.weatherForecastItem{
+	display: block;
+	float: left;
+	padding-right: 5%;
+	padding-left: 4%;
+	width: 10%;
+	background-image: none;
+	text-align: center;
+}
+
+/* drop-down item styles */
+/* if you want different styling for tertiary menus, just copy the 4 rules below and insert an additional ul: for example: "#navigation ul ul li", becomes: "#navigation ul ul ul li" */
+
+
+
+#navigation ul ul li{
+	width:auto;
+	display: inline-block;
+	float: left;
+	position:relative;
+	padding-left: 2.5%;
+	z-index:100;
+}
+
+#navigation ul ul li a {
+	display:inline-block;
+	text-decoration:none;
+	margin:0 0px;
+	padding:0px 0;
+}
+
+#navigation ul ul li a:hover, #navigation ul ul li a.hovered {
+	color: white;
+}
+
+@media screen and (max-device-width : 640px) and (orientation:portrait){
+
+	body {
+		background: url('images/wallpaper.png') no-repeat;
+		background-size: 100% auto;
+	}
+
+	#navigation {
+		font-size: 2vw;
+	}
+	#navigation ul ul {
+		width: 100%;
+		position: relative;
+		display: block;
+		max-height: 0;
+		opacity:0;
+		-webkit-transition: all 0.3s ease-in;
+				-moz-transition: all 0.3s ease-in;
+				-o-transition: all 0.3s ease-in;
+				-ms-transition: all 0.3s ease-in;
+				transition: all 0.3s ease-in;
+	}
+
+	#navigation > ul > li:hover ul, #navigation > ul > li > a:hover ul, #navigation ul ul li:hover > ul, #navigation ul ul li a:hover > ul, #navigation > ul > li > a.hovered ul, #navigation > ul > li.hovered ul{
+		left: auto;
+		max-height: 1200px;
+		display:block;
+		opacity: 1;
+	}
+}
