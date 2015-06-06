@@ -2,6 +2,14 @@
 !
 !
 !
+!
+!
+!
+!
+!
+!
+!
+!
 # ---------------------------------------------
 # bbZero 1.17.x - plugin.rc - the plugins to load
 
@@ -10,13 +18,13 @@
 # - manual editing.
 
 # - the BB hotkeys, see bbkeys.rc
-! plugins\bbKeys\bbKeys.dll
+plugins\bbKeys\bbKeys.dll
 
 # - Integrated toolbar with tasks and tray
 plugins\BlackboxBar\BlackboxBar.dll
 
 # - Lean window skinner
-! plugins\bbLeanSkin\bbLeanSkin.dll
+plugins\bbLeanSkin\bbLeanSkin.dll
 
 # - The Slit - a common place for other plugins
 ! plugins\bbSlit\bbSlit.dll

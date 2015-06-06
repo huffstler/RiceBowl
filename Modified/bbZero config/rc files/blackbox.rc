@@ -19,7 +19,7 @@ session.menu.position.x: 280
 session.menu.position.y: 148
 session.menu.maxWidth: 300
 session.menu.popupDelay: 0
-session.menu.mouseWheelFactor: 1
+session.menu.mouseWheelFactor: 10
 session.menu.alpha.enabled: false
 session.menu.alpha.value: 255
 session.menu.onTop: false
@@ -32,11 +32,14 @@ session.menu.drawSeparators: false
 session.menu.dropShadows: false
 session.menu.icon.saturation: 80
 session.menu.icon.hue: 60
-session.menu.icon.size: 16
+session.menu.icon.size: 0
 session.menu.overlap: 0
-session.menu.spacing: 2
-session.menu.separator.style: flat
-session.menu.bullet.enabled: true
+session.menu.spacing: 1
+session.menu.separator.style: bevel
+session.menu.separator.fullWidth: false
+session.menu.separator.compact: false
+session.menu.bullet.enabled: false
+session.menu.scrollButton.hue: 8
 
 # - appearance -
 session.appearance.bullet.unix: false
@@ -58,7 +61,7 @@ session.snap.threshold: 0
 
 # - misc options -
 session.screen0.focusModel: SloppyFocus
-session.screen0.fullMaximization: false
+session.screen0.fullMaximization: true
 session.screen0.strftimeformat: %H:%M %a %d %b
 
 # - workspace options -

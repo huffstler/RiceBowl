@@ -27,7 +27,7 @@ BlackboxBar.item: Clock
 # ----------------
 # General Settings
 BlackboxBar.placement: TopCenter
-BlackboxBar.position.x: 128
+BlackboxBar.position.x: 0
 BlackboxBar.position.y: 0
 BlackboxBar.widthPercent: 100
 BlackboxBar.useSlit: false
@@ -48,7 +48,7 @@ BlackboxBar.tasks.style: 0
 BlackboxBar.tasks.reverse: false
 BlackboxBar.tasks.current: true
 BlackboxBar.tasks.sysmenu: false
-BlackboxBar.tasks.drawBorder: false
+BlackboxBar.tasks.drawBorder: true
 BlackboxBar.tasks.maxWidth: 100
 
 ------------
@@ -59,14 +59,15 @@ BlackboxBar.icon.size: 16
 
 # ------------
 # Clock-Format
-BlackboxBar.strftimeFormat: %d %a %H:%M
+BlackboxBar.strftimeFormat: %a %d-%m %I:%M
 BlackboxBar.strftimeTipsFormat: %Y-%m-%d %a
+!BlackboxBar.strftimeTipsFormat: %Y-%m-%d %a
 
 # ---------------
 # Special Options
 BlackboxBar.balloonTips: false
 BlackboxBar.autoFullscreenHide: true
-BlackboxBar.setDesktopMargin: false
+BlackboxBar.setDesktopMargin: true
 BlackboxBar.sendToSwitchTo: true
 
 # -------------------------
@@ -81,39 +82,4 @@ BlackboxBar.clock.Btn4Click:
 BlackboxBar.clock.Btn5Click: 
 BlackboxBar.clock.Btn6Click: 
 BlackboxBar.alwaysOnTop: false
-BlackboxBar.2.placement: BottomCenter
-BlackboxBar.2.position.x: 768
-BlackboxBar.2.position.y: 864
-BlackboxBar.2.useSlit: false
-BlackboxBar.2.alwaysOnTop: false
-BlackboxBar.2.autoHide: false
-BlackboxBar.2.autoFullscreenHide: false
-BlackboxBar.2.clickRaise: true
-BlackboxBar.2.snapWindow: 20
-BlackboxBar.2.pluginToggle: true
-BlackboxBar.2.alpha.enabled: false
-BlackboxBar.2.alpha.value: 192
-BlackboxBar.2.icon.saturation: 80
-BlackboxBar.2.icon.hue: 60
-BlackboxBar.2.icon.size: 16
-BlackboxBar.2.widthPercent: 72
-BlackboxBar.2.minHeight: 12
-BlackboxBar.2.tasks.style: 2
-BlackboxBar.2.tasks.reverse: false
-BlackboxBar.2.tasks.current: true
-BlackboxBar.2.tasks.sysmenu: false
-BlackboxBar.2.tasks.drawBorder: false
-BlackboxBar.2.tasks.maxWidth: 100
-BlackboxBar.2.strftimeFormat: %a %d %H:%M
-BlackboxBar.2.strftimeTipsFormat: %Y-%m-%d %a
-BlackboxBar.2.clock.tips: true
-BlackboxBar.2.clock.Btn1Click: 
-BlackboxBar.2.clock.Btn2Click: 
-BlackboxBar.2.clock.Btn3Click: 
-BlackboxBar.2.clock.Btn4Click: 
-BlackboxBar.2.clock.Btn5Click: 
-BlackboxBar.2.clock.Btn6Click: 
-BlackboxBar.2.setDesktopMargin: true
-BlackboxBar.2.sendToSwitchTo: false
-BlackboxBar.2.arrowBullets: false
 

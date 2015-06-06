@@ -45,7 +45,7 @@ bbleanskin.titlebar.altRightClick: Menu
 # - Options
 
 # - Snap windows to screen edges
-bbleanskin.option.snapWindows: false
+bbleanskin.option.snapWindows: true
 
 # - Rollup style
 bbleanskin.option.nixShadeStyle: true
@@ -56,7 +56,7 @@ bbleanskin.option.enableLog: false
 # - Automatically adjust the systemwide caption
 # - height to match the current style. (Some
 # - apps might draw distorted icons with this)
-bbleanskin.option.adjustCaptionHeight: false
+bbleanskin.option.adjustCaptionHeight: true
 
 # - Switch workspace with 'Send To' from window menu
 bbleanskin.option.sendToSwitchTo: true
@@ -64,7 +64,7 @@ bbleanskin.option.sendToSwitchTo: true
 # -----------------------------------------------
 # - Windows Appearance (uncomment to apply)
 bbleanskin.windows.menu.Height: 0
-!bbleanskin.windows.menu.Font: shoe's 6pt ownage
+!bbleanskin.windows.menu.Font: Arial
 !bbleanskin.windows.menu.FontHeight: 0
-bbleanskin.windows.ScrollbarSize: 5
+bbleanskin.windows.ScrollbarSize: 10
 !bbleanskin.windows.setTooltipColor: false

@@ -27,7 +27,9 @@
 		[end]
 
 	[nop]
-
+		!	[Volume] (Volume) {mastervolume.dll}
+	[nop]
+	
 	[stylesmenu] (Styles) {styles}
 	[submenu] (BlackBox)
 		[config] (Configuration)

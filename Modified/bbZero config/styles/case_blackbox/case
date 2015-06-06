@@ -9,7 +9,38 @@ style.credits:                      none
 style.comments:                     maximhuz.com
 
 ! -- background --
-!rootCommand:                        
+!rootCommand:
+
+! -- FONT -- 
+menu.title.font:                    blank
+menu.title.fontHeight:              1
+menu.title.justify:                 center
+menu.frame.font:                    Arial
+menu.frame.fontHeight:             	14
+menu.frame.justify:                 center
+toolbar.font:                       Arial
+toolbar.fontHeight:                 14
+toolbar.justify:                    center
+window.font:                        Arial
+window.fontHeight:                  14
+window.justify:                     center
+
+! -- menu --
+menu.title.appearance:				parentrelative
+menu.title.color:                   #787878
+menu.title.textColor:               #f5f5f5
+menu.title.marginWidth:				-1
+
+menu.frame:                         flat solid
+menu.frame.color:                   #f5f5f5
+menu.frame.textColor:               #787878
+
+menu.hilite:                        flat solid
+menu.hilite.color:                  #empty
+menu.hilite.textColor:              #empty
+
+menu.bullet:                        empty
+menu.bullet.position:               right
 
 ! -- toolbar --
 toolbar:                            flat solid
@@ -17,9 +48,6 @@ toolbar.color:                      #f5f5f5
 toolbar.borderWidth: 				1
 toolbar.borderColor: 				#787878
 toolbar.textColor:                  #787878
-toolbar.justify:                    center
-toolbar.font:                       kroeger 05_55 caps
-toolbar.fontHeight:                 10
 
 toolbar.label:                      parentrelative
 toolbar.label.textColor:            #787878
@@ -41,38 +69,17 @@ toolbar.button.picColor:            #787878
 toolbar.button.pressed:             parentrelative
 toolbar.button.pressed.picColor:    #d3d3d3
 
-! -- menu --
-menu.title:                         flat solid
-menu.title.color:                   #f5f5f5
-menu.title.textColor:               #787878
-menu.title.justify:                 center
-menu.title.font:                    Arial Caps
-menu.title.fontHeight:              5
-
-menu.frame:                         flat solid
-menu.frame.color:                   #f5f5f5
-menu.frame.textColor:               #787878
-menu.frame.justify:                 center
-menu.frame.font:                    kroeger 05_55 caps
-menu.frame.fontHeight:              10
-
-menu.hilite:                        flat solid
-!menu.hilite.color:                  #f5f5f5
-!menu.hilite.textColor:              #787876
-
-menu.bullet:                        empty
-menu.bullet.position:               right
 
 ! -- window --
 window.title.focus:                 flat solid
 window.title.focus.color:           #f5f5f5
-!window.title.marginWidth:			-8
+!window.title.marginWidth:			0
 
 window.label.focus:                 parentrelative
 window.label.focus.textColor:       #787878
 
 window.handle.focus:                flat solid
-window.handle.focus.color:          #000000
+window.handle.focus.color:          #f5f5f5
 
 window.grip.focus:                  parentrelative
 window.grip.color:                  #f5f5f5
@@ -82,7 +89,7 @@ window.button.focus.color:          #f5f5f5
 window.button.focus.picColor:       #787878
 
 window.button.pressed:              flat solid
-window.button.pressed.color:        #f5f5f5
+window.button.pressed.color:        #787878
 window.button.pressed.picColor:     #d3d3d3
 
 window.title.unfocus:               flat solid
@@ -99,13 +106,10 @@ window.grip.unfocus:                parentrelative
 window.button.unfocus:              parentrelative
 window.button.unfocus.picColor:     #f5f5f5
 
-window.font:                        kroeger 05_55 caps
-window.fontHeight:                  10
-window.justify:                     center
 
 ! -- misc. --
 borderColor:                        #f5f5f5
-borderWidth:                        1
+borderWidth:                        2
 bevelWidth:                         0
 frameWidth:                         0
 handleWidth:                        0

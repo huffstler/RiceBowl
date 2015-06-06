@@ -9,20 +9,20 @@
 # -debug
 
 # Invoke menu:
-#KeyToGrab(LWIN),        WithModifier(),         WithAction(ShowMenu -key root)
-#KeyToGrab(RWIN),        WithModifier(),         WithAction(ShowMenu -key)
+KeyToGrab(LWIN),        WithModifier(),         WithAction(ShowMenu -key root)
+KeyToGrab(RWIN),        WithModifier(),         WithAction(ShowMenu -key)
 
 # alternatively (show at mouse cursor):
 KeyToGrab(M),           WithModifier(Win+Ctrl), WithAction(ShowMenu)
 KeyToGrab(M),           WithModifier(Win+Shift),WithAction(ShowWorkspaceMenu)
 
 # Workspaces:
-KeyToGrab(1),        WithModifier(Win),      WithAction(Workspace1)
-KeyToGrab(2),        WithModifier(Win),      WithAction(Workspace2)
-KeyToGrab(3),        WithModifier(Win),      WithAction(Workspace3)
-KeyToGrab(4),        WithModifier(Win),      WithAction(Workspace4)
-KeyToGrab(5),        WithModifier(Win),      WithAction(Workspace5)
-KeyToGrab(6),        WithModifier(Win),      WithAction(Workspace6)
+KeyToGrab(1),        	WithModifier(Win),      WithAction(Workspace1)
+KeyToGrab(2),        	WithModifier(Win),      WithAction(Workspace2)
+KeyToGrab(3),        	WithModifier(Win),      WithAction(Workspace3)
+KeyToGrab(4),        	WithModifier(Win),      WithAction(Workspace4)
+KeyToGrab(5),        	WithModifier(Win),      WithAction(Workspace5)
+KeyToGrab(6),        	WithModifier(Win),      WithAction(Workspace6)
 KeyToGrab(Left),        WithModifier(Alt),      WithAction(PrevWorkspace)
 KeyToGrab(Right),       WithModifier(Alt),      WithAction(NextWorkspace)
 KeyToGrab(Left),        WithModifier(Ctrl+Alt), WithAction(PrevWindow)
