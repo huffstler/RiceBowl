@@ -1,0 +1,73 @@
+# ------------------------------------------------------
+# BlackboxBar+ 1.17 - configuration
+
+# Lines starting with # or ! are ignored
+
+# ---------------------
+# The items on the bar:
+# This builds a toolbar with tasks and tray. You can
+# change the order of items or uncomment some of the
+# currently disabled (!) items)
+
+BlackboxBar.item: WindowLabel
+!BlackboxBar.item: WorkspaceButtonL
+BlackboxBar.item: WorkspaceButtonR
+BlackboxBar.item: WorkspaceLabel
+BlackboxBar.item: Tasks
+BlackboxBar.item: CurrentOnlyButton
+BlackboxBar.item: Tray
+BlackboxBar.item: WindowButtonL
+!BlackboxBar.item: WindowButtonR
+BlackboxBar.item: Clock
+
+!BlackboxBar.item: TaskStyleButton
+!BlackboxBar.item: NewLine
+!BlackboxBar.item: Space
+
+# ----------------
+# General Settings
+BlackboxBar.placement: BottomCenter
+BlackboxBar.position.x: 128
+BlackboxBar.position.y: 0
+BlackboxBar.widthPercent: 80
+BlackboxBar.useSlit: false
+BlackboxBar.pluginToggle: true
+BlackboxBar.OnTop: true
+BlackboxBar.AutoHide: false
+BlackboxBar.autoRaise: true
+BlackboxBar.snapToEdge: 20
+BlackboxBar.arrowBullets: false
+BlackboxBar.alpha.enabled: false
+BlackboxBar.alpha.value: 255
+BlackboxBar.transparent: false
+
+# ---------
+# Task Tabs
+BlackboxBar.tasks.style: 2
+BlackboxBar.tasks.reverse: false
+BlackboxBar.tasks.current: true
+BlackboxBar.tasks.sysmenu: false
+BlackboxBar.tasks.drawBorder: false
+BlackboxBar.tasks.maxWidth: 100
+
+------------
+# Icons
+BlackboxBar.icon.saturation: 95
+BlackboxBar.icon.hue: 64
+BlackboxBar.icon.size: 16
+
+# ------------
+# Clock-Format
+BlackboxBar.strftimeFormat: %d %a %H:%M
+
+# ---------------
+# Special Options
+BlackboxBar.balloonTips: true
+BlackboxBar.autoFullscreenHide: true
+BlackboxBar.setDesktopMargin: false
+BlackboxBar.sendToSwitchTo: true
+
+# -------------------------
+# hidden icons (auto saved)
+BlackboxBar.tray.hidden.count: 0
+

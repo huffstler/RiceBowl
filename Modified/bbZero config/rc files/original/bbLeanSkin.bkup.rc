@@ -1,0 +1,70 @@
+# -----------------------------------------------
+# - bbleanskin.rc
+# - Lines starting with # or ! are ignored.
+
+# - Titlebar Buttons
+# - 0 = Empty
+# - 1 = Close
+# - 2 = Maximize
+# - 3 = Minimize
+# - 4 = Rollup
+# - 5 = AlwaysOnTop
+# - 6 = Pin
+# - 7 = Application Icon
+
+bbleanskin.titlebar.buttons: 4-321
+
+# -----------------------------------------------
+# - Titlebar Button Glyphs
+# - May be a bitmap file or "default"
+
+bbleanskin.titlebar.glyphs: buttons\buttons_11x11.bmp
+
+# icon saturation / hue for inactive window
+bbleanskin.titlebar.iconSat: 255
+bbleanskin.titlebar.iconHue: 0
+
+# -----------------------------------------------
+# - Titlebar Clicks
+# - format: [<modifier>]<button>Click: <action>
+# - buttons: Left, Mid, Right, Dbl
+# - modifiers: shift, ctrl, alt
+# - actions: 1-6 from above, "Lower" or "Menu"
+
+bbleanskin.titlebar.DblClick: Maximize
+bbleanskin.titlebar.RightClick: Menu
+bbleanskin.titlebar.MidClick: Close
+
+# alternative suggestion
+! bbleanskin.titlebar.DblClick: Rollup
+! bbleanskin.titlebar.RightClick: Minimize
+! bbleanskin.titlebar.ShiftRightClick: Close
+! bbleanskin.titlebar.altRightClick: Menu
+
+# -----------------------------------------------
+# - Options
+
+# - Snap windows to screen edges
+bbleanskin.option.snapWindows: false
+
+# - Rollup style
+bbleanskin.option.nixShadeStyle: true
+
+# - Show log window
+bbleanskin.option.enableLog: false
+
+# - Automatically adjust the systemwide caption
+# - height to match the current style. (Some
+# - apps might draw distorted icons with this)
+bbleanskin.option.adjustCaptionHeight: false
+
+# - Switch workspace with 'Send To' from window menu
+bbleanskin.option.sendToSwitchTo: false
+
+# -----------------------------------------------
+# - Windows Appearance (uncomment to apply)
+! bbleanskin.windows.menu.Height: 15
+! bbleanskin.windows.menu.Font: shoe's 6pt ownage
+! bbleanskin.windows.menu.FontHeight: 8
+! bbleanskin.windows.ScrollbarSize: 13
+! bbleanskin.windows.setTooltipColor: true

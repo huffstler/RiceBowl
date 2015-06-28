@@ -1,0 +1,104 @@
+# ---------------------------------------
+# exclusions.rc - for bbLeanSkinEng.dll
+
+# Format: program:classname
+#   program               excludes all windows from 'program'
+#   program:classname     excludes only that window from 'program'
+#   *:classname           excludes all windows with 'classname'
+
+# Get the appropriate names from bbleanskin's log-window.
+# See README.TXT for further information.
+
+# supported wildcards are ? and *
+# h?llo = hallo, hello
+# h*o   = hallo, hejo, ho
+
+# ---------------------------------------
+# Invisible windows:
+# (Listed here to save resources, and possibly trouble)
+
+BROWSEUI.DLL:OTClass
+SYSTRAY.EXE:SystemTray_Main
+WEBCHECK.DLL:MS_WebcheckMonitor
+STMGR.EXE:STATEMGRPROC
+WIASERVC.DLL:STIExe_Window_Class
+TAPISRV.EXE:UmdmSP Class
+TAPISRV.EXE:WAN_Class
+RNAAPP.EXE:RNAENGCLASS
+USER32.dll:#32770
+wuaclt.exe
+wscntfy.dll:SecNotify
+
+QUARTZ.DLL:FilterGraphWindow
+
+comctl32.dll
+conime.exe:ConsoleIMEClass
+conime.exe
+NvMcTray.dll
+NVSVC.dll
+Reader_sl.exe
+sa-gui.exe:QWidget
+#TextPad.exe:Afx:00400000:8:00010005:00000000:00000000
+winxmove.exe
+# visual studio
+msenv.dll:VBFloatingPalette
+msenv.dll:VBMdiChildH
+# firefox|mozilla
+xul.dll:MozillaHiddenWindowClass
+# thunderbird
+thunderbird.exe:MozillaHiddenWindowClass
+# Snarl
+iTunes.exe:iTunesSnarl
+firefox.exe:SnarlXPCOMClass
+MSVBVM60.DLL:ThunderRT6FormDC
+
+# vista invisible windows ??
+csrss.exe
+dwm.exe
+sdclt.exe
+taskeng.exe
+winlogon.exe
+
+kbdmgr.exe
+
+# various programs
+*:TApplication
+
+# programs which come with their own skin:
+foo_ui_std.dll
+Logic Platinum*
+toolkit.dll
+trillian.exe
+#winamp
+vis_*.dll
+winamp.exe
+# WMP
+WMPUI.DLL:TimerWindowClass
+WMPLAYER.EXE:atlcommon_timer*
+Wmp.dll
+# iTunes
+iTunes.DLL 
+iTunes.exe:iTunes
+iTunes.exe:WinAMRestoreWndClass
+iTunesLocalized.DLL
+iTunesRegistry.DLL 
+# windows live photo gallery
+WLXPhotoLibraryMain.dll:WLX_Photo_Library_MainWnd
+WLXPhotoViewer.dll:Photo_Lightweight_Viewer
+
+# programs with trouble
+AdobeOwl.dll:OWL.TabPane
+ccupdate.dll
+ccupdate.dll:*
+nero.exe
+Photoshop.exe:Photoshop
+squidcam.exe
+# wxWidgets version DevCpp
+wxdevcpp.exe
+
+# vista issues
+nlite.exe
+taskmgr.exe
+
+# additions from 2014
+devenv.exe

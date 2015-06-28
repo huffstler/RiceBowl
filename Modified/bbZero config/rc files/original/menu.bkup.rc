@@ -1,0 +1,67 @@
+# -----------------------------------------------------------------
+# bbZero 1.17.x - MENU FILE
+# -----------------------------------------------------------------
+
+# Available menu commands are listed in the documentation.
+
+[begin] (BlackBox)
+    [search] (Search) {SEARCHMENU|COMMON_SEARCHMENU}
+    [path] (Start) {STARTMENU|COMMON_STARTMENU}
+    [path] (Desktop) {DESKTOPDIRECTORY|COMMON_DESKTOPDIRECTORY}
+    [path] (Quick) {APPDATA\Microsoft\Internet Explorer\Quick Launch}
+
+    [nop]
+    [exec] (Explorer) {explorer.exe}
+    # Paths with spaces should have quotes:
+    # [exec] (Firefox) {"PROGRAM_FILES\Mozilla Firefox\firefox.exe"}
+    [submenu] (System)
+        [path] (My Computer) {DRIVES}
+        [path] (Personal) {PERSONAL}
+        [path] (Bitbucket) {BITBUCKET}
+        [path] (Controls) {CONTROLS}
+        # Uncomment this line to check out all available system folders
+        # [include] {shellfolders.rc}
+        [run]  (Run)
+        [end]
+    [nop]
+    [stylesmenu] (Styles) {styles}
+    [submenu] (BlackBox)
+        [config] (Configuration)
+        [include] {plugins\bbLeanSkin\bbLeanSkinMenu.rc}
+        [submenu] (About)
+            [aboutstyle] (About Style)
+            [aboutplugins] (About Plugins)
+            [about] (About BlackBox)
+            [end]
+        [submenu] (Edit)
+            [editstyle] (Current Style)
+            [editmenu] (menu.rc)
+            [editblackbox] (blackbox.rc)
+            [editextensions] (extensions.rc)
+            [editplugins] (plugins.rc)
+            [edit] (bbKeys.rc) {plugins\bbKeys\bbKeys.rc}
+            [edit] (search.rc) {search.rc}
+            [end]
+        [submenu] (Search)
+            [reindex] (Reindex)
+            [abortindex] (Abort indexing)
+            [edit] (search.rc) {search.rc}
+            [end]
+        [nop]
+        # Also note that relative paths refer to the blackbox directory
+        [exec] (Documentation) {docs\bblean.htm}
+        [exec] (Install/Uninstall) {bsetshell.exe}
+        [exec] (bbStyleMaker) {bbstylemaker.exe}
+        [nop]
+        [reconfig] (Reconfigure)
+        [restart] (Restart)
+        [exit]  (Quit)
+        [end]
+    [submenu] (Off)
+        [lockworkstation] (Lock)
+        [logoff] (Logoff)
+        [suspend] (Standby)
+        [reboot] (Reboot)
+        [shutdown] (Shutdown)
+        [end]
+[end]

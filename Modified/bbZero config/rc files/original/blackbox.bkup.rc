@@ -6,7 +6,7 @@
 
 # - the toolbar -
 session.screen0.toolbar.enabled: false
-session.screen0.toolbar.placement: TopCenter
+session.screen0.toolbar.placement: BottomCenter
 session.screen0.toolbar.widthPercent: 66
 session.screen0.toolbar.onTop: true
 session.screen0.toolbar.autoHide: false
@@ -18,8 +18,8 @@ session.screen0.toolbar.alpha.value: 224
 session.menu.position.x: 280
 session.menu.position.y: 148
 session.menu.maxWidth: 300
-session.menu.popupDelay: 0
-session.menu.mouseWheelFactor: 10
+session.menu.popupDelay: 80
+session.menu.mouseWheelFactor: 3
 session.menu.alpha.enabled: false
 session.menu.alpha.value: 255
 session.menu.onTop: false
@@ -28,40 +28,34 @@ session.menu.snapWindow: true
 session.menu.pluginToggle: true
 session.menu.openDirection: bullet
 session.menu.sortbyExtension: true
-session.menu.drawSeparators: false
-session.menu.dropShadows: false
+session.menu.drawSeparators: true
+session.menu.dropShadows: true
 session.menu.icon.saturation: 80
 session.menu.icon.hue: 60
-session.menu.icon.size: 0
+session.menu.icon.size: 16
 session.menu.overlap: 0
-session.menu.spacing: 1
-session.menu.separator.style: bevel
-session.menu.separator.fullWidth: false
-session.menu.separator.compact: false
-session.menu.bullet.enabled: false
-session.menu.scrollButton.hue: 8
 
 # - appearance -
-session.appearance.bullet.unix: false
+session.appearance.bullet.unix: true
 session.appearance.arrow.unix: false
 session.appearance.cursor.usedefault: false
 
 # - graphics -
 session.background.smartWallpaper: false
-session.background.enabled: false
+session.background.enabled: true
 session.opaqueMove: true
 session.imageDither: 0
 session.outlineText: false
 session.force.font.Shadows: false
 
 # - snap -
-session.snap.toPlugins: false
-session.snap.padding: 0
-session.snap.threshold: 0
+session.snap.toPlugins: true
+session.snap.padding: 2
+session.snap.threshold: 10
 
 # - misc options -
-session.screen0.focusModel: SloppyFocus
-session.screen0.fullMaximization: true
+session.screen0.focusModel: ClickToFocus
+session.screen0.fullMaximization: false
 session.screen0.strftimeformat: %H:%M %a %d %b
 
 # - workspace options -
@@ -73,7 +67,7 @@ session.workspaces.followActive: true
 session.workspaces.restoreToCurrent: true
 session.workspaces.altMethod: true
 session.workspaces.styleXPFix: false
-session.screen0.workspaceNames: Personal,Work,IRC
+session.screen0.workspacenames: alpha,beta,gamma
 
 # - additional menu settings  -<S-F12>
 session.autoraisedelay: 250
@@ -102,4 +96,4 @@ session.screen0.slit.ontop: true
 session.screen0.slit.toggle: false
 
 # - current style -
-session.styleFile: styles\case_blackbox\case
+session.styleFile: styles\nightBlue.style

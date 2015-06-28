@@ -1,0 +1,55 @@
+# ------------------------------------------
+# bbZero 1.18.x - search.rc - search settings
+
+# Lines starting with # or ! are ignored
+
+search.location.0.dir: C:\Program Files\
+search.location.0.includes: .*\.exe;.*\.com;.*\.bat;.*\.cmd
+search.location.0.excludes: C:\Program Files\NVIDIA Corporation\Installer2
+search.location.0.recursive: true
+
+search.location.1.dir: C:\bin\
+search.location.1.includes: .*\.exe;.*\.com;.*\.bat;.*\.cmd
+search.location.1.excludes:
+search.location.1.recursive: true
+
+search.location.2.dir: C:\totalcmd\
+search.location.2.includes: .*\.exe;.*\.com;.*\.bat;.*\.cmd
+search.location.2.excludes:
+search.location.2.recursive: false
+
+search.location.3.dir: C:\Program Files (x86)\
+search.location.3.includes: .*\.exe;.*\.com;.*\.bat;.*\.cmd
+search.location.3.excludes: C:\Program Files\NVIDIA Corporation\Installer2
+search.location.3.recursive: true
+
+search.location.4.dir: C:\Windows\
+search.location.4.includes: .*\.exe;.*\.com;.*\.bat;.*\.cmd
+search.location.4.excludes:
+search.location.4.recursive: false
+
+search.location.5.dir: C:\Windows\SysWOW64\WindowsPowerShell\v1.0\
+search.location.5.includes: .*\.exe;.*\.com;.*\.bat;.*\.cmd
+search.location.5.excludes:
+search.location.5.recursive: false
+
+search.location.6.dir: C:\Windows\SysWOW64\
+search.location.6.includes: .*\.exe;.*\.com;.*\.bat;.*\.cmd
+search.location.6.excludes:
+search.location.6.recursive: false
+
+search.location.7.dir: C:\Windows\System32\WindowsPowerShell\v1.0\
+search.location.7.includes: .*\.exe;.*\.com;.*\.bat;.*\.cmd
+search.location.7.excludes:
+search.location.7.recursive: false
+
+search.location.8.dir: C:\Windows\System32
+search.location.8.includes: .*\.exe;.*\.com;.*\.bat;.*\.cmd
+search.location.8.excludes:
+search.location.8.recursive: false
+
+search.location.9.dir: C:\bbZero\
+search.location.9.includes: .*\.exe;.*\.com;.*\.bat;.*\.cmd
+search.location.9.excludes:
+search.location.9.recursive: true
+

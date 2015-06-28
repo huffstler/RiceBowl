@@ -14,7 +14,7 @@ blackbox.editor: notepad++.exe
 
 # -----------------------------------------------------
 # Drag'n-dropped background images are saved here
-blackbox.background.rootCommand: bsetroot -full "C:\Users\Patrick\Pictures\Walls\Volcano.jpg"
+blackbox.background.rootCommand: style
 blackbox.background.enabled: true
 blackbox.background.smartWallpaper: true
 

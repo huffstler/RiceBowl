@@ -1,0 +1,74 @@
+# ------------------------------
+# bbkeys.rc - bblean 1.17
+
+# This if uncommented disables the echo of bbkeys commands on the toolbar
+# -nolabel
+
+# This if uncommented shows a warning box if a hotkey could not be set
+# (like when it is already in use by another program)
+# -debug
+
+# Invoke menu:
+KeyToGrab(LWIN),        WithModifier(),         WithAction(ShowMenu -key root)
+KeyToGrab(RWIN),        WithModifier(),         WithAction(ShowMenu -key)
+
+# alternatively (show at mouse cursor):
+KeyToGrab(M),           WithModifier(Win+Ctrl), WithAction(ShowMenu)
+KeyToGrab(M),           WithModifier(Win+Shift),WithAction(ShowWorkspaceMenu)
+
+# Workspaces:
+KeyToGrab(Num1),        WithModifier(Win),      WithAction(Workspace1)
+KeyToGrab(Num2),        WithModifier(Win),      WithAction(Workspace2)
+KeyToGrab(Num3),        WithModifier(Win),      WithAction(Workspace3)
+KeyToGrab(Num4),        WithModifier(Win),      WithAction(Workspace4)
+KeyToGrab(Num5),        WithModifier(Win),      WithAction(Workspace5)
+KeyToGrab(Num6),        WithModifier(Win),      WithAction(Workspace6)
+KeyToGrab(Left),        WithModifier(Win),      WithAction(PrevWorkspace)
+KeyToGrab(Right),       WithModifier(Win),      WithAction(NextWorkspace)
+KeyToGrab(Left),        WithModifier(Win+Ctrl), WithAction(PrevWindow)
+KeyToGrab(Right),       WithModifier(Win+Ctrl), WithAction(NextWindow)
+KeyToGrab(Up),          WithModifier(Win+Ctrl), WithAction(PrevWindowAllWorkspaces)
+KeyToGrab(Down),        WithModifier(Win+Ctrl), WithAction(NextWindowAllWorkspaces)
+KeyToGrab(Up),          WithModifier(Win),      WithAction(MoveWindowLeft)
+KeyToGrab(Down),        WithModifier(Win),      WithAction(MoveWindowRight)
+KeyToGrab(G),           WithModifier(Win),      WithAction(GatherWindows)
+
+# Windows:
+KeyToGrab(X),           WithModifier(Win),      WithAction(MaximizeWindow)
+KeyToGrab(V),           WithModifier(Win),      WithAction(MaximizeVertical)
+KeyToGrab(H),           WithModifier(Win),      WithAction(MaximizeHorizontal)
+KeyToGrab(Y),           WithModifier(Win),      WithAction(RestoreWindow)
+KeyToGrab(N),           WithModifier(Win),      WithAction(MinimizeWindow)
+KeyToGrab(D),           WithModifier(Win),      WithAction(MinimizeAll)
+KeyToGrab(PageUp),      WithModifier(Win),      WithAction(RaiseWindow)
+KeyToGrab(PageDown),    WithModifier(Win),      WithAction(LowerWindow)
+KeyToGrab(End),         WithModifier(Win),      WithAction(ShadeWindow)
+KeyToGrab(Insert),      WithModifier(Win),      WithAction(StickWindow)
+KeyToGrab(Delete),      WithModifier(Win),      WithAction(CloseWindow)
+
+# Blackbox
+KeyToGrab(R),           WithModifier(Win+Ctrl), WithAction(Reconfigure)
+KeyToGrab(R),           WithModifier(Win+Alt),  WithAction(Restart)
+KeyToGrab(Q),           WithModifier(Win),      WithAction(Quit)
+KeyToGrab(M),           WithModifier(Win),      WithAction(EditMenu)
+KeyToGrab(P),           WithModifier(Win),      WithAction(EditPlugins)
+KeyToGrab(S),           WithModifier(Win),      WithAction(EditStyle)
+KeyToGrab(S),           WithModifier(Win+Ctrl), WithAction(AboutStyle)
+KeyToGrab(P),           WithModifier(Win+Ctrl), WithAction(TogglePlugins)
+
+# System
+KeyToGrab(R),           WithModifier(Win),      WithAction(Run)
+KeyToGrab(F10),         WithModifier(Win),      WithAction(Logoff)
+KeyToGrab(F11),         WithModifier(Win),      WithAction(Reboot)
+KeyToGrab(F12),         WithModifier(Win+Alt),  WithAction(Suspend)
+KeyToGrab(F12),         WithModifier(Win+Ctrl), WithAction(Hibernate)
+KeyToGrab(F12),         WithModifier(Win),      WithAction(Shutdown)
+KeyToGrab(Spacebar),    WithModifier(Win),      WithAction(LockWorkstation)
+
+# Extern commands:
+KeyToGrab(E),           WithModifier(Win),      WithAction(Exec explorer.exe /e,c:\)
+KeyToGrab(Pause),       WithModifier(Win),      WithAction(Exec control.exe sysdm.cpl)
+KeyToGrab(Home),        WithModifier(Win),      WithAction(Exec docs\bblean.htm)
+
+# BroadcastMessage example (toggles bbLeanSkin, uncomment to use)
+! KeyToGrab(L), WithModifier(Win), WithAction(exec @BBCfg.plugin.load bbLeanSkin)
