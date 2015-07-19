@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hey there!</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="./jquery.min.js"></script>
+	</head>
+	<body>
+		<ul class="border">
+			<li><a class="parent1" href="#">4chan</a>
+				<ul class="subMenu">
+					<li><a class="tab1" href="http://boards.4chan.org/a/">/a/nime</a></li>
+					<li><a class="tab1" href="http://boards.4chan.org/b/">/b/oard</a></li>
+					<li><a class="tab1" href="http://boards.4chan.org/g/">/g/nu</a></li>
+					<li><a class="tab1" href="http://boards.4chan.org/h/">/h/entai</a></li>
+					<li><a class="tab1" href="http://boards.4chan.org/w/">/w/alls</a></li>
+					<li><a class="tab1" href="http://boards.4chan.org/wg/">/wg/allpapers</a></li>
+				</ul>
+			</li>
+			
+			<li><a class="parent2" href="#">Entertainment</a>
+				<ul class="subMenu">
+					<li><a class="tab2" href="https://music.google.com">						Google Play Music</a></li>
+					<li><a class="tab2" href="https://www.netflix.com/WiHome">					Netflix</a></li>
+					<li><a class="tab2" href="https://thepiratebay.net">						Pirate Bay</a></li>
+					<li><a class="tab2" href="https://songza.com">								Songza</a></li>
+					<li><a class="tab2" href="https://soundcloud.com">							Soundcloud</a></li>
+					<li><a class="tab2" href="https://twitch.tv">								Twitch</a></li>
+				</ul>
+			</li>
+			
+			<li><a class="parent3" href="#">Reddit</a>
+				<ul class="subMenu">
+					<li><a class="tab3" href="http://www.reddit.com/r/all/">All</a></li>
+					<li><a class="tab3" href="http://www.reddit.com/r/bodyweightfitness/">Body Weight Fitness</a></li>
+					<li><a class="tab3" href="http://www.reddit.com/r/manga/">Manga</a></li>
+					<li><a class="tab3" href="http://www.reddit.com/r/programming/">Programming</a></li>
+					<li><a class="tab3" href="http://www.reddit.com/r/SSBPM/">Project M</a></li>
+					<li><a class="tab3" href="http://www.reddit.com/r/Smashbros/">Smashbros</a></li>
+					<li><a class="tab3" href="http://www.reddit.com/r/talesfromtechsupport/">Tales From Tech Support</a></li>
+					<li><a class="tab3" href="http://www.reddit.com/r/trap/">Trap</a></li>
+					<li><a class="tab3" href="http://www.reddit.com/r/unixporn/">Unixporn</a></li>
+				</ul>
+			</li>
+			
+			<li><a class="parent4" href="#">School</a>
+				<ul class="subMenu">
+					<li><a class="tab4" href="https://getacclaim.com/patrick_hough/projects/index">		Acclaim							</a></li>
+					<li><a class="tab4" href="https://www.gmail.com"> 							Gmail					</a></li>
+					<li><a class="tab4" href="https://libgdx.badlogicgames.com/nightlies/docs/api/">		libGDX API						</a></li>
+					<li><a class="tab4" href="https://sakai.udel.edu/portal">							Sakai							</a></li>
+					<li><a class="tab4" href="https://udsa.nss.udel.edu/psp/SAPRD/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL?FolderPath=PORTAL_ROOT_OBJECT.CO_EMPLOYEE_SELF_SERVICE.HC_SSS_STUDENT_CENTER">	UDSIS	</a></li>
+					<li><a class="tab4" href="https://po-box.nss.udel.edu/">								UD P.O Box						</a></li>
+					<li><a class="tab4" href="http://library.udel.edu/databases/">						UD Databases					</a></li>
+				</ul>
+			</li>
+			
+			<li><a class="parent5" href="#">Social</a>
+				<ul class="subMenu">
+					<li><a class="tab5" href="https://forum.xda-developers.com/android/apps-games">	Android Apps			</a></li>
+					<li><a class="tab5" href="https://forum.xda-developers.com/android/software">	Android Dev			</a></li>
+					<li><a class="tab5" href="https://facebook.com">Facebook</a></li>
+					<li><a class="tab5" href="http://smashboards.com/">Smashboards</a></li>
+					<li><a class="tab5" href="http://twitter.com">Twitter</a></li>
+					<li><a class="tab5" href="http://forum.xda-developers.com/galaxy-s4-att">XDA-Developers</a></li>
+				</ul>
+			</li>
+			
+			<li><a class="parent6" href="#">Utilities</a>
+				<ul class="subMenu">
+					<li><a class="tab6" href="https://github.com">Github</a></li>
+					<li><a class="tab6" href="https://drive.google.com">Google Drive</a></li>
+					<li><a class="tab6" href="https://onedrive.live.com/?gologin=1&mkt=en-US">Onedrive</a></li>
+					<li><a class="tab6" href="https://pomf.se">Pomf.se</a></li>
+					<li><a class="tab6" href="https://stackoverflow.com">Stack Overflow</a></li>
+				</ul>
+			</li>
+		</ul>
+		<script>
+			$('.subMenu').hide();
+			$("li:has(ul)").click(
+				function()
+				{
+					$("ul",this).slideToggle('fast');
+				}
+			);
+		</script>
+	</body>
+</html>

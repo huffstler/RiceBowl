@@ -1,0 +1,55 @@
+<!--
+   index.html
+   
+   Copyright 2014 pache <github.com/mukyu>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 3 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Homepage</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/boxes.js"></script>
+		<script type="text/javascript" src="js/quotes.js"></script>
+		<script type="text/javascript" src="config.js"></script>
+		<script type="text/javascript" src="js/mascot.js"></script>
+		<script type="text/javascript" src="js/search.js"></script>
+	</head>
+	<body>
+	<header>
+		<ul id="nav"></ul>
+	</header>
+	<div id="container">
+		<div id="pages">
+		</div>
+		<div id="search">
+			<input type="text" id="string" onkeydown="onReturnPress();" name="string">
+		</div>	
+	</div>
+	<div id="quote">
+		<h1 id="text"></p>
+		<h2 id="author"></p>	
+	</div>
+	<div id="mascot">
+	</div>
+	</body>
+</html>

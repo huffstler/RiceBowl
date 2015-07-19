@@ -1,0 +1,142 @@
+/*
+ * style.css
+ * 
+ * Copyright 2014 pache <github.com/mukyu>
+ * 
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ * MA 02110-1301, USA.
+ * 
+ * 
+ */
+
+
+@import url(http://fonts.googleapis.com/css?family=Gudea:700);
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background: url('img/bg.png');
+	font-family: "Gudea", sans-serif;
+}
+
+li{
+	display: inline;
+	text-shadow: 0px 0px 5px rgba(100,100,100,0.7);
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	display: block;
+	margin: 20px auto 20px auto;
+	height: 20px;
+	width: 100px;
+	list-style-type: none;
+}
+
+#container{
+	margin: 10px 0px 10px 0px;
+	background: url('img/bg2.png');
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.1), 0px 0px 5px rgba(0,0,0,0.7);
+	padding: 20px 0px 20px 0px;
+}
+
+#pages{
+	width: 550px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#p1, #p2, #p3, #p4{
+	display: none;
+}
+
+a.box{
+	background: #171717;
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.8);
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	margin: 10px;
+	line-height: 100px;
+	border-bottom: 1px solid rgba(255,255,255,0.22);
+}
+
+p{
+	text-align: center;
+	font-size: 24pt;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+}
+
+h1{
+	color: #efefef;
+	font-family: "Georgia", serif;
+	font-size: 1.3em;
+	margin-top: 100px;
+	margin-left: 240px;
+	margin-right: 240px;
+	text-align: justify;
+	opacity: 0.7;
+	-moz-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+}
+
+h2{
+	font-family: "Georgia", serif;
+	font-size: 0.8em;
+	float: right;
+	margin-top: 10px;
+	margin-right: 340px;
+	text-align: justify;
+	opacity: 0.6;
+	-moz-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+}
+
+h1:hover, h2:hover{
+	opacity: 1;
+}
+
+#mascot{
+	position: absolute;
+}
+
+input#string{
+	background: url('img/bg.png');
+	border-bottom: 1px solid rgba(255,255,255,0.23);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding: 10px;
+	margin-left: 10px;
+	width: 510px;
+	border-radius: 5px;
+	color: #efefef;
+	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.8);
+}
+
+#search{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+}

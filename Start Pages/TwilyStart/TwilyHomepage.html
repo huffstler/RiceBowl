@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--
+
+    Author:        Twily                               2014
+    Website:       http://twily.info/
+    Compatibility: Mozilla Firefox, Google Chrome
+
+    Search Useage: "artist!i" will find images for "artist"
+
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>Sup?</title>
+
+<style type="text/css">
+html,body {
+    margin: 0; padding: 0; overflow: hidden;
+    width: 100%; height: 100%;
+    font-family: "Droid Sans", "Liberation Sans", "DejaVu Sans", "Segoe UI", Sans; font-size: 10pt;
+    background: #17181A;
+}
+ul, li { list-style-type: none; margin: 0; padding: 0; }
+
+a, a:link, a:visited { color: #aaabad; text-decoration: none; }
+a:hover, a:active    { color: #cecfd1; }
+
+.center { position: relative; width: 100%; height: 100%; }
+    .center .content {
+        margin: auto; overflow: auto; width: 600px; height: 300px;
+        position: absolute; left: 0; top: 0; right: 0; bottom: -50px; /* search box align */
+        text-align: center; opacity: 1; transition: .3s ease-out;
+    }
+
+#q {
+    width: 500px;
+    background: #27282B; color: #cecfd1;
+    border: 0px solid #27282B; border-radius: 0px;
+    padding: 8px 8px; font-size: 12pt;
+}
+    #q:focus { border-color: #66686A !important; }
+    #q:hover { border-color: #393A3D; }
+
+#more {
+    background: #27282B; color: #aaabad; border-radius: 0px;
+    cursor: pointer; display: inline-block;
+    font-size: 18pt; line-height: 26px; /* vertical align "+" button */
+    width: 24px; height: 24px;
+    text-align: center; font-weight: bold;
+}
+    #help {
+        display: inline-block; width: 320px; cursor: default;
+        font-family: "PragmataPro", "Droid Sans Mono", "Liberation Sans Mono", "DejaVu Sans Mono", "Consolas", "Lucida Console", monospace;
+        background: #27282B; color: #aaabad;
+        padding: 8px; text-align: left; border-radius: 0px;
+        opacity: 0; transition: .2s ease-out;
+    }
+
+#menu {
+    position: fixed; bottom: -64px; left: 0; z-index: 11;
+    width: 100%; height: 128px;
+    background: transparent; color: #aaabad; cursor: default;
+    transition: .2s ease-out;
+}
+    #menu:hover            { bottom: 0; }
+    #mnu                   { height: 64px; line-height: 32px; }
+
+    #grip                  { width: 100%; height: 64px; background: transparent; }
+
+    #menu ul               { display: inline-table; position: relative; list-style: none; }
+    #menu label            { padding: 0; display: inline-block; font-weight: bold; width: 200px; } /* menu title width */
+
+    #menu ul li            { float: left; border-radius: 0px; height: 64px; }
+    #menu ul li:hover      { background: #27282B; color: #cecfd1; }
+    #menu ul li:hover > ul { visibility: visible; bottom: 100%; opacity: 1; transition: .2s ease-out; }
+    #menu ul li a          { display: block; white-space: nowrap; padding: 0 10px; }
+
+    #menu ul ul            {
+        display: block; visibility: hidden; width: 200px;
+        position: absolute; bottom: 200%;
+        background: transparent; opacity: 0;
+        transition: .3s ease-out;
+    }
+
+    #menu ul ul li         { width: 100%; height: 32px; text-align: center; } /* menu links align */
+    #menu ul ul li:hover   { background: #27282B; } <!--originally 27282B-->
+
+    #menu img {
+        width: 16px; height: 16px;
+        position: relative; top: 3px;
+        padding-right: 3px; visibility: hidden;
+    }
+</style>
+
+<script type="text/javascript" language="javascript">
+var $=function(id) { return document.getElementById(id); };
+
+
+var search=[ // Search engines
+    ["",    "https://www.google.com/#q="],                           // Google (Default)
+    ["!g",  "https://www.google.com/#q="],                           // Google
+    ["!i",  "https://www.google.com/search?tbm=isch&q="],            // Google Images
+    ["!y",  "https://www.youtube.com/results?search_query="],       // YouTube
+    ["!w",  "http://en.wikipedia.org/w/index.php?search="],         // Wikipedia
+    ["!u",  "http://www.urbandictionary.com/define.php?term="],     // Urban Dictionary
+];
+
+var menus=[ // Menu Titles ["Title", width(px)],                                                   /* menu width */
+    ["Personal",        200],                                        // menu-1
+    ["4Chan",           200],                                        // menu-2
+	["Reddit", 			200],
+    ["Media",  	   		200],                                        // menu-3
+    ["Tech & Rice",		200],                                        // menu-4
+];
+
+var showFavicon = false;                                             // Enable/Disable Favicons
+
+// Link setup (separate with ["", "", ""],)
+// Format: ["Name", "URL", "Custom Favicon"],
+var links=[
+    // Personal -           menu-1
+	["Gmail",                      "http://gmail.com",                 ""],
+    ["OneDrive",                   "http://onedrive.live.com",                 ""],
+    ["PNC",                        "http://pnc.com",                 ""],
+	["Sakai",                      "http://sakai.udel.edu",                 ""],
+	["UDSIS",                      "https://cas.nss.udel.edu/cas/login?service=https://udsa.nss.udel.edu/psp/SAPRD/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL?FolderPath=PORTAL_ROOT_OBJECT.CO_EMPLOYEE_SELF_SERVICE.HC_SSS_STUDENT_CENTER",                 ""],
+	
+
+    ["",                                "",                                     ""],
+
+    // Entertainment -          menu-2
+    ["/a/",             				"https://boards.4chan.org/a/catalog",  "http://s.4cdn.org/image/favicon-ws.ico"],
+	["/b/",             				"https://boards.4chan.org/b/catalog",   ""],
+    ["/d/",             				"https://boards.4chan.org/d/catalog",  "http://s.4cdn.org/image/favicon-ws.ico"],
+	["/g/",             				"https://boards.4chan.org/g/catalog",   "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/h/",             				"https://boards.4chan.org/h/catalog",   ""],
+    ["/w/",           					"https://boards.4chan.org/w/catalog", "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/wg/",        					"https://boards.4chan.org/wg/catalog",  ""],
+
+    ["",                                "",                                     ""],
+	
+	//Reddit - Menu 3
+	["Android",             			"https://reddit.com/r/android",  ""],
+	["Arch Linux",             			"https://reddit.com/r/archlinux",   ""],
+	["CS;GO",             				"https://reddit.com/r/GlobalOffensive",   ""],
+    ["Manga",             				"https://reddit.com/r/manga",   ""],
+    ["Smashbros",           			"https://reddit.com/r/smashbros", ""],
+    ["Project M",        				"https://reddit.com/r/SSBPM",  ""],
+	["Tales from Tech Support",   		"https://reddit.com/r/TfTS",   ""],
+    ["Team Fortress 2",        			"https://reddit.com/r/TF2", ""],
+    ["Trap",        					"https://reddit.com/r/Trap",  ""],
+
+    ["",                                "",                                     ""],
+    
+	// Media -  menu-3
+    ["MyAnimeList",                      "http://myanimelist.net",                 ""],
+	["Batoto",                      	"http://bato.to",                 ""],
+	["DeviantArt",                      "http://deviantart.com/",               ""],
+	["Facebook",                        "http://facebook.com",                  ""],
+    ["Netflix",                         "http://netflix.com",                   ""],
+	["Pirate Bay",                     "http://thepiratebay.se",               "https://nb9-stumbleupon.netdna-ssl.com/-G-ChSR8MQAl3Skvq8oNZg"],
+	["Songza",                          "http://songza.com",                    ""],
+    ["YouTube",                         "http://youtube.com",                   ""],
+    ["",                                "",                                     ""],
+
+    // Tech & Rice -          menu-4
+    ["Arch Linux",                      "http://archlinux.org",                 ""],
+	["Github",	                        "http://github.com",                 ""],
+	["Drive",                           "https://www.drive.google.com",              "https://cf.dropboxstatic.com/static/images/favicon-vflk5FiAC.ico"],
+    ["Pomf.se",                         "http://pomf.se/",                      ""],
+    ["Userstyles",                      "http://userstyles.org/",               ""],
+    ["Wallgig",                         "http://wallgig.net",                   ""],
+    ["Wallhaven",                       "http://alpha.wallhaven.cc",            ""],
+	["XDA-Developers",                 	"http://forum.xda-developers.com/galaxy-s4-att",                 ""],
+];
+
+
+var ss="";
+function init() {
+    for(var i=0;i<search.length;i++) if(search[i][0]=="") ss=search[i][1];
+    if(ss=="") { alert("Error: Missing default search engine!"); }
+
+    build();
+
+    $('q').value="";
+    $('q').focus();
+}
+
+function build() { // Build menus
+    $('mnu').innerHTML="";
+
+    for(var i=0;i<menus.length;i++) { // Menu titles
+        $('mnu').innerHTML+="<li><label>"+menus[i][0]+"</label>\n<ul id=\"mnu_"+(i+1)+"\"></ul></li>";
+        $('mnu_'+(i+1)).style.width=menus[i][1]+"px";
+    }
+
+    var m=1,skip=false;
+    for(var i=0;i<links.length;i++) { // Menu links
+        if(links[i][0]=="" && links[i][1]=="") { skip=true; }
+
+        if(!skip) {
+            var printimg="";
+
+            if(showFavicon) {
+                var favicon;
+                if(links[i][2]!="") favicon=links[i][2];
+                else                favicon=getFavicon(links[i][1]);
+
+                printimg="<img id=\"img_"+i+"\" src=\""+favicon+"\""+" onload=\"javascript:this.style.visibility='inherit';\" /> ";
+            }
+
+            $('mnu_'+m).innerHTML+="<li><a href=\""+links[i][1]+"\" target=\"_self\">"+printimg+links[i][0]+"</a></li>";
+        } else {
+            skip=false; m++;
+        }
+    }
+}
+
+function handleQuery(e,q) { // Handle search query
+    var key=e.keyCode || e.which;
+
+    if(key==13) { // enter
+        if(q.lastIndexOf("!")!=-1) {
+            var x=q.lastIndexOf("!"),found=false;
+            
+            for(var i=0;i<search.length;i++) {
+                if(search[i][0]==q.substr(x)) { // Find "!?"
+                    found=true; window.location=search[i][1]+q.substr(0,x).replace(/&/g,"%26");
+                }
+            }
+            if(!found) { // Invalid "!?", use default
+                window.location=ss+q.substr(0,x).replace(/&/g,"%26");
+            }
+        } else { // "!?" where not specified, use default
+            window.location=ss+q.replace(/&/g,"%26");
+        }
+    }
+}
+
+var m=false;
+function toggle() { // Toggle help
+    m=!m;
+
+    if(m) {
+        $('help').style.opacity=1;
+        $('more').innerHTML="-";
+    } else {
+        $('help').style.opacity=0;
+        $('more').innerHTML="+";
+    }
+
+    $('q').focus();
+}
+
+function fade(x) {
+    if(x==1) {
+        $('form').style.top="-100px";
+        $('form').style.opacity=0;
+        if(m) toggle();
+    } else {
+        $('form').style.top="0px";
+        $('form').style.opacity=1;
+        $('q').focus();
+    }
+}
+
+function getFavicon(url) {
+    var l=document.createElement("a");
+    l.href=url;
+
+    return l.protocol+"//"+l.hostname+"/favicon.ico";
+}
+</script>
+</head>
+<body onload="javascript:init();">
+
+
+<div class="center">
+    <div class="content" id="form">
+        <input type="text" id="q" value="" placeholder="Search..." onkeypress="javascript:handleQuery(event,this.value);" onfocus="this.value=this.value" />
+        <br /><br />
+        <div id="more" onclick="javascript:toggle();">+</div>
+        <br /><br />
+        <div id="help">
+            <ul>
+                <li><b>!g</b> = Search Google (Default)</li>
+                <li><b>!i</b> = Search Google Images</li>
+                <li><b>!y</b> = Search YouTube</li>
+                <li><b>!w</b> = Search Wikipedia</li>
+                <li><b>!m</b> = Search IMDb</li>
+                <li><b>!u</b> = Search Urban Dictionary</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<center>
+    <div id="menu" onmouseover="javascript:fade(1);" onmouseout="javascript:fade(0);">
+        <div id="grip"></div>
+        <ul id="mnu"></ul>
+    </div>
+</center>
+
+
+</body>
+</html>
