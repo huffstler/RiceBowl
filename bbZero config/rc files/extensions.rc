@@ -40,10 +40,10 @@ blackbox.desktop.CtrlRightClick: @BBCore.ShowMenu tasks
 
 # configuration menu
 blackbox.desktop.AltRightClick: @BBCore.ShowMenu configuration
-blackbox.desktop.marginTop: -1
-blackbox.desktop.marginBottom: -1
-blackbox.desktop.marginLeft: -1
-blackbox.desktop.marginRight: -1
+blackbox.desktop.marginTop: 40
+blackbox.desktop.marginBottom: 10
+blackbox.desktop.marginLeft: 10
+blackbox.desktop.marginRight: 10
 
 # alternative menu
 ! blackbox.desktop.CtrlRightClick: @BBCore.ShowMenu alt-menu.rc
@@ -98,8 +98,9 @@ blackbox.global.window.font: verdana
 blackbox.global.window.fontHeight: 13
 blackbox.global.window.fontWeight: bold
 blackbox.appearance.bullet.unix: false
-blackbox.snap.padding: 0
-blackbox.snap.threshold: 1
+blackbox.snap.padding: 5
+blackbox.snap.threshold: 5
+blackbox.snap.toPlugins: true
 blackbox.menu.grip.enabled: false
 
 # -----------------------------------------------------

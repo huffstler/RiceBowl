@@ -29,16 +29,16 @@ session.menu.pluginToggle: true
 session.menu.openDirection: bullet
 session.menu.sortbyExtension: true
 session.menu.drawSeparators: false
-session.menu.dropShadows: false
+session.menu.dropShadows: true
 session.menu.icon.saturation: 80
 session.menu.icon.hue: 60
 session.menu.icon.size: 0
 session.menu.overlap: 0
-session.menu.spacing: 0
+session.menu.spacing: 5
 session.menu.separator.style: bevel
 session.menu.separator.fullWidth: false
 session.menu.separator.compact: false
-session.menu.bullet.enabled: false
+session.menu.bullet.enabled: true
 session.menu.scrollButton.hue: 8
 
 # - appearance -
@@ -52,7 +52,7 @@ session.background.enabled: false
 session.opaqueMove: true
 session.imageDither: 0
 session.outlineText: false
-session.force.font.Shadows: false
+session.force.font.Shadows: true
 
 # - snap -
 session.snap.toPlugins: false
@@ -61,7 +61,7 @@ session.snap.threshold: 0
 
 # - misc options -
 session.screen0.focusModel: SloppyFocus
-session.screen0.fullMaximization: true
+session.screen0.fullMaximization: false
 session.screen0.strftimeformat: %H:%M %a %d %b
 
 # - workspace options -
