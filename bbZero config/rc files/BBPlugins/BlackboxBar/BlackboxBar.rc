@@ -33,7 +33,7 @@ BlackboxBar.widthPercent: 80
 BlackboxBar.useSlit: false
 BlackboxBar.pluginToggle: true
 BlackboxBar.OnTop: true
-BlackboxBar.AutoHide: true
+BlackboxBar.AutoHide: false
 BlackboxBar.autoRaise: true
 BlackboxBar.snapToEdge: 0
 BlackboxBar.snapWindow: 1
