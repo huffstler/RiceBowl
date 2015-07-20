@@ -1,7 +1,7 @@
 # -----------------------------------------------
 # - bbleanskin.rc
 # - Lines starting with # or ! are ignored.
-
+#This is a test for symlinking
 # - Titlebar Buttons
 # - 0 = Empty
 # - 1 = Close

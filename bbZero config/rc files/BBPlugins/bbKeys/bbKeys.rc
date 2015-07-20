@@ -7,7 +7,7 @@
 # This if uncommented shows a warning box if a hotkey could not be set
 # (like when it is already in use by another program)
 # -debug
-
+#This is a test for symlinking
 # Invoke menu:
 KeyToGrab(LWIN),        WithModifier(),         WithAction(ShowMenu -key root)
 KeyToGrab(RWIN),        WithModifier(),         WithAction(ShowMenu -key)

@@ -12,7 +12,7 @@
 # supported wildcards are ? and *
 # h?llo = hallo, hello
 # h*o   = hallo, hejo, ho
-
+#This is a test for symlinking
 # ---------------------------------------
 # Invisible windows:
 # (Listed here to save resources, and possibly trouble)

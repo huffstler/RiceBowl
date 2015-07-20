@@ -23,7 +23,7 @@ BlackboxBar.item: Clock
 !BlackboxBar.item: TaskStyleButton
 !BlackboxBar.item: NewLine
 BlackboxBar.item: Space
-
+#This is a test for symlinking
 # ----------------
 # General Settings
 BlackboxBar.placement: TopCenter
