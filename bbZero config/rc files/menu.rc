@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------
 
 # Available menu commands are listed in the documentation.
-
+#This is a test for symlinking
 [begin] (You Called?)
 	[exec] (Firefox) {"D:\Programs\Firefox\firefox.exe"}
 	[exec] (HexChat) {"D:\Programs\HexChat\hexchat.exe"}

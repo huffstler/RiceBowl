@@ -3,7 +3,7 @@
 
 # Lines starting with # or ! are ignored
 # All items are configurable from the menu
-
+#This is a test for symlinking
 # - the toolbar -
 session.screen0.toolbar.enabled: false
 session.screen0.toolbar.placement: TopCenter
