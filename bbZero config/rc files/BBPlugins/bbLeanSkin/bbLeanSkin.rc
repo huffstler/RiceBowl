@@ -36,7 +36,7 @@ bbleanskin.titlebar.iconHue: 0
 !bbleanskin.titlebar.MidClick: Close
 
 # alternative suggestion
-bbleanskin.titlebar.DblClick: Rollup
+!bbleanskin.titlebar.DblClick: Rollup
 bbleanskin.titlebar.RightClick: Minimize
 bbleanskin.titlebar.ShiftRightClick: Close
 bbleanskin.titlebar.altRightClick: Menu
@@ -66,5 +66,5 @@ bbleanskin.option.sendToSwitchTo: true
 bbleanskin.windows.menu.Height: 0
 !bbleanskin.windows.menu.Font: Arial
 !bbleanskin.windows.menu.FontHeight: 0
-bbleanskin.windows.ScrollbarSize: 10
+bbleanskin.windows.ScrollbarSize: 15
 !bbleanskin.windows.setTooltipColor: false

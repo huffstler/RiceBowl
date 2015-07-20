@@ -26,17 +26,17 @@ BlackboxBar.item: Space
 #This is a test for symlinking
 # ----------------
 # General Settings
-BlackboxBar.placement: TopCenter
-BlackboxBar.position.x: 0
+!BlackboxBar.placement: TopCenter
+BlackboxBar.position.x: 192
 BlackboxBar.position.y: 0
 BlackboxBar.widthPercent: 80
 BlackboxBar.useSlit: false
 BlackboxBar.pluginToggle: true
 BlackboxBar.OnTop: true
-BlackboxBar.AutoHide: false
+BlackboxBar.autoHide: false
 BlackboxBar.autoRaise: true
 BlackboxBar.snapToEdge: 0
-BlackboxBar.snapWindow: 1
+BlackboxBar.snapWindow: 0
 BlackboxBar.arrowBullets: false
 BlackboxBar.alpha.enabled: false
 BlackboxBar.alpha.value: 255
@@ -48,7 +48,7 @@ BlackboxBar.tasks.style: 0
 BlackboxBar.tasks.reverse: false
 BlackboxBar.tasks.current: true
 BlackboxBar.tasks.sysmenu: false
-BlackboxBar.tasks.drawBorder: true
+BlackboxBar.tasks.drawBorder: false
 BlackboxBar.tasks.maxWidth: 100
 
 ------------
@@ -87,17 +87,6 @@ BlackboxBar.clock.Btn4Click:
 BlackboxBar.clock.Btn5Click: 
 BlackboxBar.clock.Btn6Click: 
 BlackboxBar.alwaysOnTop: true
-BlackboxBar.2.placement: BottomCenter
-BlackboxBar.2.position.x: 960
-BlackboxBar.2.position.y: 1080
-BlackboxBar.2.useSlit: false
-BlackboxBar.2.alwaysOnTop: false
-BlackboxBar.2.autoHide: false
-BlackboxBar.2.clickRaise: true
-BlackboxBar.2.snapWindow: 20
-BlackboxBar.2.pluginToggle: true
-BlackboxBar.2.alpha.enabled: false
-BlackboxBar.2.alpha.value: 192
-BlackboxBar.2.icon.saturation: 80
-BlackboxBar.2.icon.hue: 60
+BlackboxBar.placement: TopCenter
+BlackboxBar.clickRaise: true
 
