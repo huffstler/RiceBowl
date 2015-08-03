@@ -39,7 +39,7 @@ BlackboxBar.snapToEdge: 0
 BlackboxBar.snapWindow: 0
 BlackboxBar.arrowBullets: false
 BlackboxBar.alpha.enabled: false
-BlackboxBar.alpha.value: 255
+BlackboxBar.alpha.value: 200
 BlackboxBar.transparent: false
 
 # ---------
@@ -48,7 +48,7 @@ BlackboxBar.tasks.style: 0
 BlackboxBar.tasks.reverse: false
 BlackboxBar.tasks.current: true
 BlackboxBar.tasks.sysmenu: false
-BlackboxBar.tasks.drawBorder: false
+BlackboxBar.tasks.drawBorder: true
 BlackboxBar.tasks.maxWidth: 100
 
 ------------
@@ -78,7 +78,7 @@ BlackboxBar.tray.hidden.2: "Afx:0000000140000000:0",128
 BlackboxBar.tray.hidden.3: "GWXTrayIcon",0
 BlackboxBar.tray.hidden.4: "WindowsForms10.Window.0.app.0.34f5582_r31_ad1",1
 BlackboxBar.tray.hidden.5: "WorkerW",123
-BlackboxBar.minHeight: 32
+BlackboxBar.minHeight: 28
 BlackboxBar.clock.tips: false
 BlackboxBar.clock.Btn1Click: 
 BlackboxBar.clock.Btn2Click: 

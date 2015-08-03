@@ -1,0 +1,172 @@
+body {
+	margin:0px;
+	padding:0px;
+	background-color:#635D69;
+	color:#FFF;
+	font-family:Helvetica;
+}
+table.main {
+	margin:0px;
+	padding:0px;
+	//width:100%;
+}
+img.mascot {
+	float:left;
+	height:633px;
+}
+img.arrow {
+	float:left;
+	height:30px;
+}
+
+ul {
+	list-style:none;
+}
+
+
+div.container {
+	background-color:transparent;
+	border:#FFF solid thin;
+}
+div.head {
+	font-size:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:center;
+	border-bottom:#FFF solid thin;
+}
+div.item {
+	padding-top:5px;
+	margin-bottom:5px;
+	text-align:center;
+	width:150px;
+	height:25px;
+	background-color:transparent;
+	border:none;
+	
+	opacity: 0.2;
+	transition: all .4s ease;
+}
+div.item:hover {
+	background-color:#FFF;
+	opacity:1;
+	
+}
+a {
+	color:#FFF;
+	text-decoration:none;
+}
+a:hover {
+	color:#000;
+}
+
+
+div.middle {
+	margin-left:60px;
+	display:none;
+}
+
+input.search {
+	color:#FFF;
+	margin-left:38px;
+	margin-bottom:20px;
+	width:545px;
+	height:30px;
+	background-color:transparent;
+	border:#FFF solid thin;
+	font-size:20px;
+}
+::-webkit-input-placeholder {
+  color:#FFF;
+}
+input:focus {
+  outline:none;
+}
+
+h1 {
+	font-size:56px;
+	color:#FFF;
+	margin-top:30px;
+	margin-left:50px;
+}
+
+#chan:hover {background-color:#006600;}
+#social:hover {background-color:#DD4B39;}
+#coding:hover {background-color:#204056;}
+#mtg:hover {background-color:#B26B41;}
+#music:hover {background-color:#00E8FF;}
+
+
+div.player {
+	height:35px;
+	width:366px;
+	margin-left:40px;
+	margin-bottom:10px;
+	text-align:center;
+	background-color:transparent;
+	border:#FFF solid thin;
+}
+button.left {
+	height:35px;
+	width:100px;
+	color:#FFF;
+	background-color:transparent;
+	border-right:#FFF solid thin;
+	border-left:none;
+	border-top:none;
+	border-bottom:none;
+	margin-right:10px;
+}
+button.right {
+	height:35px;
+	width:100px;
+	color:#FFF;
+	background-color:transparent;
+	border-left:#FFF solid thin;
+	border-right:none;
+	border-top:none;
+	border-bottom:none;
+	margin-left:10px;
+}
+button:focus {
+ outline:none;
+}
+button:active {
+	background-color:#695064;
+}
+
+div.left {
+	background-color:#695064;
+	height:633px;
+	width:300px;
+	border-right:#FFF solid thin;
+  
+	position:relative;
+  display:inline-block;
+  left:-280px;
+  transition: 2s;
+	
+	opacity: 0;
+	transition: all .5s ease;
+}
+div.left:hover{
+	opacity:1;
+	
+  transition: 0.5s;
+  left: 0;
+}
+#clock {
+	text-align:center;
+	color:#FFF;
+	font-size:40px;
+	font-family:Helvetica;
+}
+
+
+
+
+
+
+
+
+
