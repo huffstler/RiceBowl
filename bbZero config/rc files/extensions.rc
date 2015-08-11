@@ -14,7 +14,7 @@ blackbox.editor: notepad++.exe
 
 # -----------------------------------------------------
 # Drag'n-dropped background images are saved here
-blackbox.background.rootCommand: style
+blackbox.background.rootCommand: bsetroot -full "C:\Users\Patrick\Pictures\Walls\BlueMountains.jpg"
 blackbox.background.enabled: true
 blackbox.background.smartWallpaper: true
 
@@ -40,10 +40,10 @@ blackbox.desktop.CtrlRightClick: @BBCore.ShowMenu tasks
 
 # configuration menu
 blackbox.desktop.AltRightClick: @BBCore.ShowMenu configuration
-blackbox.desktop.marginTop: 40
-blackbox.desktop.marginBottom: 10
-blackbox.desktop.marginLeft: 10
-blackbox.desktop.marginRight: 10
+blackbox.desktop.marginTop: 55
+blackbox.desktop.marginBottom: 25
+blackbox.desktop.marginLeft: 25
+blackbox.desktop.marginRight: 25
 
 # alternative menu
 ! blackbox.desktop.CtrlRightClick: @BBCore.ShowMenu alt-menu.rc
@@ -100,7 +100,7 @@ blackbox.global.window.fontWeight: bold
 blackbox.appearance.bullet.unix: false
 blackbox.snap.padding: 5
 blackbox.snap.threshold: 5
-blackbox.snap.toPlugins: true
+blackbox.snap.toPlugins: false
 blackbox.menu.grip.enabled: false
 
 # -----------------------------------------------------

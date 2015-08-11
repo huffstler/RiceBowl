@@ -5,29 +5,21 @@
 # Available menu commands are listed in the documentation.
 #This is a test for symlinking
 [begin] (You Called?)
+[submenu] (Common)
 	[exec] (Cygwin) {"C:\cygwin64\cygwin.bat"}
 	[exec] (Firefox) {"D:\Programs\Firefox\firefox.exe"}
 	[exec] (HexChat) {"D:\Programs\HexChat\hexchat.exe"}
+	[exec] (Scrot) {"C:\Program Files (x86)\Scrotter\scrotter.exe"}
 	[exec] (Steam) {"D:\Programs\Steam\steam.exe"}
+	[exec] (VirtualBox) {"C:\Program Files\Oracle\VirtualBox\VirtualBox.exe"}
 	#[path] (Desktop) {DESKTOPDIRECTORY|COMMON_DESKTOPDIRECTORY}
-
+	[end]
 	[nop]
 
 	# Paths with spaces should have quotes:
 	
-	[submenu] (System)
-		[path] (Admin) {CONTROLS}
-		[path] (Git Folder){"C:\Users\Patrick\git"}
-		[path] (My Computer) {DRIVES}
-		[path] (Personal) {PERSONAL}
-		[path] (Start) {STARTMENU|COMMON_STARTMENU}
-		[path] (Trash) {BITBUCKET}
-		# Uncomment this line to check out all available system folders
-		# [include] {shellfolders.rc}
-		[run]  (Run)
-		[end]
 	
-	[stylesmenu] (Styles) {styles}
+	![stylesmenu] (Styles) {styles}
 	[submenu] (BlackBox)
 		[config] (Configuration)
 		[include] {plugins\bbLeanSkin\bbLeanSkinMenu.rc}
@@ -64,5 +56,17 @@
 		[reboot] (Reboot)
 		[shutdown] (Shutdown)
 		[end]
-		[search] (Search) {SEARCHMENU|COMMON_SEARCHMENU}
+		![search] (Search) {SEARCHMENU|COMMON_SEARCHMENU}
+
+	[submenu] (System)
+		[path] (Admin) {CONTROLS}
+		[path] (Git){"C:\Users\Patrick\git"}
+		[path] (Home) {PERSONAL}
+		[path] (Root) {DRIVES}
+		[path] {STARTMENU|COMMON_STARTMENU}
+		[path] (Trash) {BITBUCKET}
+		# Uncomment this line to check out all available system folders
+		# [include] {shellfolders.rc}
+		![run]  (Run)
+		[end]
 [end]

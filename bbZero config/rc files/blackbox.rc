@@ -22,13 +22,13 @@ session.menu.popupDelay: 0
 session.menu.mouseWheelFactor: 1
 session.menu.alpha.enabled: false
 session.menu.alpha.value: 255
-session.menu.onTop: false
+session.menu.onTop: true
 session.menu.sticky: true
 session.menu.snapWindow: true
 session.menu.pluginToggle: true
 session.menu.openDirection: bullet
 session.menu.sortbyExtension: true
-session.menu.drawSeparators: false
+session.menu.drawSeparators: true
 session.menu.dropShadows: true
 session.menu.icon.saturation: 80
 session.menu.icon.hue: 60
@@ -40,6 +40,7 @@ session.menu.separator.fullWidth: false
 session.menu.separator.compact: false
 session.menu.bullet.enabled: true
 session.menu.scrollButton.hue: 8
+session.menu.scroller.position: none
 
 # - appearance -
 session.appearance.bullet.unix: false
@@ -60,7 +61,7 @@ session.snap.padding: 0
 session.snap.threshold: 0
 
 # - misc options -
-session.screen0.focusModel: SloppyFocus
+session.screen0.focusModel: ClickToFocus
 session.screen0.fullMaximization: false
 session.screen0.strftimeformat: %H:%M %a %d %b
 
@@ -73,7 +74,7 @@ session.workspaces.followActive: true
 session.workspaces.restoreToCurrent: true
 session.workspaces.altMethod: true
 session.workspaces.styleXPFix: false
-session.screen0.workspaceNames: Personal,Work,IRC
+session.screen0.workspaceNames: Personal,Work,IRC,Vbox
 
 # - additional menu settings  -<S-F12>
 session.autoraisedelay: 250
