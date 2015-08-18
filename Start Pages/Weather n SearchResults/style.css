@@ -1,0 +1,310 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	cursor:default;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clear{
+	clear:both;
+}
+#wrapper{
+	min-width:700px;
+	max-width:1000px;
+	width:60%;
+	margin:5% auto 0 auto;
+}
+a:link,
+a:visited,
+a:active{
+	text-decoration:none;
+}
+/* ICONS */
+@font-face {
+    font-family: 'heydings_iconsregular';
+    src: url('fonts/heydings_icons-webfont.eot');
+    src: url('fonts/heydings_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/heydings_icons-webfont.woff') format('woff'),
+         url('fonts/heydings_icons-webfont.ttf') format('truetype'),
+         url('fonts/heydings_icons-webfont.svg#heydings_iconsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* TIME STYLES */
+#fulltime{
+	float:left;
+	text-transform:uppercase;
+}
+#time{
+	font-size:1.2em;
+}
+#time span{
+	animation: blink 4s linear infinite;
+	-moz-animation: blink 4s linear infinite;
+	-webkit-animation: blink 4s linear infinite;
+	vertical-align:top;
+}
+@-webkit-keyframes blink {
+	0% {
+		opacity: 1.0;
+		}
+	25% {
+		opacity: .25;
+	}
+	50% {
+		opacity: .5;
+	}
+	75% {
+		opacity: .75;
+	}
+	100% {
+		opacity: 1.0;
+	}	
+}
+@-moz-keyframes blink {
+	0% {
+		opacity: 1.0;
+		}
+	25% {
+		opacity: .25;
+	}
+	50% {
+		opacity: .5;
+	}
+	75% {
+		opacity: .75;
+	}
+	100% {
+		opacity: 1.0;
+	}
+}
+#day{
+	font-size:4em;
+	font-weight:bold;
+	margin-top:-5%;
+}
+#date{
+	text-align:right;
+	font-size:1.2em;
+	margin-top:-4px;
+}
+/* WEATHER WIDGET STYLES*/
+#weather .weatherForecastRange,
+#weather .weatherForecastText,
+#weather .weatherForecastDate,
+#weather .weatherCity,
+#weather .weatherTemp,
+#weather .weatherDesc,
+#weather .weatherRange{
+	display:none;
+}
+#weather{
+	float:right;
+	width:50%;
+	margin-top:2%;
+	background:transparent !important;
+}
+#weather .weatherForecastItem{
+	float:left;
+	width:20%;
+	padding-top:40px;
+	background-position:top center;
+}
+#weather .weatherForecastDay{
+	text-align:center;
+	text-transform:uppercase;
+}
+/* BOOKMARK STYLES */
+#bm{
+	margin-top:5%;
+}
+#bm ul{
+	float:left;
+	width:22%;
+	border-left:1px solid #fff;
+	color:#fff;
+	padding:1%;
+}
+#bm li{
+	font-size:.9em;
+	margin:1% 0;
+}
+#bm .title{
+	text-transform:uppercase;
+	font-size:1.2em;	
+	margin-bottom:5%;
+	
+}
+#bm a{
+	display:block;
+}
+#bm a:hover{
+	margin-left:1%;
+}
+/* SEARCH STYLES */
+#search{
+	margin-top:5%;
+}
+#search ul, #search input,#search span{
+	float:left;
+}
+#search ul{
+	text-transform:uppercase;
+}
+#search .engine{
+	width:15%;
+}
+#search .type{
+	width:5%;
+}
+#search span{
+	padding:0 1%;
+	display:block;
+}
+#search input{
+	width:75%;
+	outline: none;
+	border:none;
+	border-bottom:1px solid #fff;
+	background:none;
+	padding:1%;
+	padding-top:0%;
+}
+#search .sub{
+	display:none;
+	opacity:0;
+	width:100%;
+	background: #313131;
+	
+}
+#search .sub li{
+	margin:5px 0;
+	font-size:.9em;
+}
+#search  li{
+	cursor:pointer;	
+}
+#search .engine .first{
+	text-align:right;
+}
+#search .first:hover > .sub{
+	opacity:1;
+	display:block;
+	transition: all 1s ease 0s;
+}
+#search  .engine .sub a{
+	display:block;
+	text-align:right;
+}
+#search .type, .webResult span{
+	 font-family: 'heydings_iconsregular';
+	 font-size:1em;
+}
+/* RESULTS STYLES */
+#resultsDiv,#resultsDiv .webResult{
+	margin-top:2%;
+}
+.webResult h2, .webResult p{
+	margin-bottom:1%;
+}
+.webResult h3{
+	text-align:right;
+}
+.webResult span{
+	font-size:1em;
+	margin-right:3px;
+}
+.imageResult{
+	float:left;
+	margin:1% 0 1% 1%;
+	width:24%;
+}
+.imageResult .pic{
+	display:block;
+	
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	padding:40% 0;
+	width:100%;
+}
+/* EDIT TXT COLORS, BACKGROUND COLOR/IMG, TXT EFFECT etc */
+body{
+	background: #313131;
+	font-family:Calibri;
+}
+#loading,
+.webResult span,
+.webResult h2,
+#search input,
+#search span,
+#search .engine .first,
+#search .type .first,
+a:link,
+a:active,
+a:visited,
+.weatherForecastDay,
+#time,
+#day,
+#date{
+	color:#fff;
+}
+#bm li a{
+	color:#a5a5a5;
+}
+#bm li a:hover{
+	color:#fff;
+}
+#search .sub li a{
+	color:#a5a5a5;
+}
+.webResult p{
+	color:#a5a5a5;
+	text-shadow:1px 1px 1px rgba(0,0,0,.8);
+}
+#search .sub li a:hover{
+	color:#fff;
+}

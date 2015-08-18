@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.appcache">
+<head>
+  <meta charset="utf-8" />
+  <title>StartPage.js</title>
+
+  <!--[ begin Stylesheets ]-->
+  <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One'
+    rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <!--[ end Stylesheets ]-->
+
+  <!--[ begin Scripts ]-->
+  <script src="js/lib/json2.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    var appCache = window.applicationCache;
+    appCache.addEventListener('updateReady', function () {
+        if (appCache.status == appCache.UPDATEREADY) {
+          appCache.swapCache();
+          if (confirm("A new version of StartPage is available. Reload?") {
+            window.location.reload();
+          }
+        }
+    });
+  </script>
+  <!--[ end Scripts ]-->
+</head>
+<body>
+</body>
+</html>

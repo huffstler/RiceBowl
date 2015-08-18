@@ -1,0 +1,18 @@
+; Standardize formatting across editors
+; http://editorconfig.org
+
+root = true
+
+[*]
+; Charset
+charset=utf-8
+
+; Whitespace
+end_of_line=lf
+insert_final_new_line=true
+trim_trailing_whitespace=true
+
+; Indent
+indent_style=space
+indent_size=2
+

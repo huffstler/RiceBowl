@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>StartUp Page</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/zweatherfeed.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+<link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div id="fulltime">
+				<h2 id="time"></h2>
+				<h1 id="day"></h1>
+				<h3 id="date"></h3v>
+			</div>
+			<div id="weather"></div>
+			<div class="clear"></div>
+		</header>
+		<section id="bm">
+			<ul>
+				<li class="title">tech</li>
+				<li><a href="#">r/web_design</a></li>
+				<li><a href="#">r/unixporn</a></li>
+				<li><a href="#">r/battlestations</a></li>
+				<li><a href="#">stackoverflow</a></li>
+			</ul>
+			<ul>
+				<li class="title">anime</li>
+				<li><a href="#">/a/</a></li>
+				<li><a href="#">aldnoah.zero</a></li>
+				<li><a href="#">tokyo esp</a></li>
+				<li><a href="#">akame ga kill</a></li>
+			</ul>
+			<ul>
+				<li class="title">misc</li>
+				<li><a href="#">/fit/</a></li>
+				<li><a href="#">r/worldnews</a></li>
+				<li><a href="#">r/gaming</a></li>
+				<li><a href="#">r/dallas</a></li>
+			</ul>
+			<ul>
+				<li class="title">work</li>
+				<li><a href="#">email</a></li>
+				<li><a href="#">basecamp</a></li>
+				<li><a href="#">harverster</a></li>
+			</ul>
+			<div class="clear"></div>
+		</section>
+		<form id="search">
+			<ul class="engine">
+				<li class="first"><p id="curreng"><a href="google.com" id="go">google</a></p>
+					<ul class="sub">
+						<li class="sel"><a href="kat.ph" id="kat">kat.ph</a></li>
+						<li class="sel"><a href="soundcloud.com" id="sc">soundcloud</a></li>
+						<li class="sel"><a href="youtube.com" id="yt">youtube</a></li>
+						<li class="sel"><a href="vimeo.com" id="vm">vimeo</a></li>
+					</ul>
+				</li>
+			</ul>
+			<span>|</span>
+			<ul class="type">
+				<li class="first"><p id="currtype"><a href="#" id="web">M</a></p>
+					<ul class="sub">
+						<li class="sel"><a href="#" id="images">I</a></li>
+						<li class="sel"><a href="#" id="video">V</a></li>
+						<li class="sel"><a href="#" id="news">D</a></li>
+					</ul>
+				</li>
+			</ul>
+			<input type="text" id="query" autocomplete="off"/>
+			
+			<div class="clear"></div>
+		</form>
+		<section id="resultsDiv"></section>
+	</div>
+</body>
+</html>

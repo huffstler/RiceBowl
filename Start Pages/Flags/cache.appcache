@@ -1,0 +1,17 @@
+CACHE MANIFEST
+# Main page
+index.html
+
+# Scripts
+js/app.js
+js/lib/json2.js
+
+# CSS
+css/main.css
+
+# Fonts
+https://fonts.googleapis.com/css?family=Julius+Sans+One
+https://themes.googleusercontent.com/static/fonts/juliussansone/v2/iU65JP9acQHPDLkdalCF7q3fkYX5z1QtDUdIWoaaD_k.woff
+
+FALLBACK:
+offline.html
