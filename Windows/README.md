@@ -1,10 +1,5 @@
-# WindowsRice
-Collection of dotfiles, shells, fonts, visual styles and more
+# Windows Rice
 
-One folder will have original files, the other will have my edits of them
+Current Desktop:
 
-This is my current desktop (will change with any large visual updates)
-
-https://u.teknik.io/RZKiHg.jpg
-
-<a href="http://imgur.com/touFd7o"><img src="http://i.imgur.com/touFd7o.jpg" title="source: imgur.com" /></a>
+<a href="https://u.teknik.io/cekYbN.png"><img src="https://u.teknik.io/cekYbN.png" title="source: imgur.com" /></a>
