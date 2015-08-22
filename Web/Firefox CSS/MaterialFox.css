@@ -1,6 +1,9 @@
 /*                          
-	
-	MATERIAL-FOX
+
+                             _______________
+                            //             \\
+                            |  MATERIALFOX  |
+                            \\_____________//
 
 
 This is a HEAVILY edited CSS skin for firefox, originally from the github repo...
@@ -70,6 +73,7 @@ Look here: *Gonna Upload this in a sec*
 .toolbarbutton, 
 .tab-background *{
   background-image: none !important;
+/*   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3) !important; */
 }
 
 .tab-background,
@@ -83,6 +87,7 @@ Look here: *Gonna Upload this in a sec*
     
 #TabsToolbar:after {
   border-bottom: 10px solid #e8eaed !important;
+  
 }
 
 #main-window {
@@ -179,6 +184,7 @@ select > input {
 /*   padding-right: -5px !important; */
   border: none !important;
   background: #3949ab !important;                          /* 700 color*/
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3) !important;
 }
 
 #main-window .tabbrowser-tab {
@@ -186,12 +192,13 @@ select > input {
   background: 0 !important;
   border-radius: 0 !important;
   padding: 0 !important;
-  box-shadow: none !important;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3) !important;
 }
 
 tab {
   font-family: "Segoe UI", sans-serif !important;
   text-align: center !important;
+  
 }
 
 .tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {
@@ -214,12 +221,7 @@ max-width: 250px !important;
 /* Standard Tabs */
 
 #main-window .tabbrowser-tab {
-  border-width: 0 1px 0 2px !important;
-  border-style: solid !important;
-  border-right-color: #1a237e !important; /*The darker color of the shadow*/    /* 900 color*/
-  border-left-color: #283593 !important;  /*Lighter color of the shadow*/       /* 800 color*/
-/*   font-size:12px */
-  color: #ffffff !important;
+/*   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3) !important; */
 }
 
 /* Not sure what this changes unfortunately */
@@ -228,10 +230,13 @@ max-width: 250px !important;
 }
 
 /* Background tabs, non-hovered */
+
 #main-window .tabbrowser-tab:not(:-moz-lwtheme)  {
-  background-color: #3949ab !important;
-/*   box-shadow: inset 0 -5px 15px -15px rgba(0, 0, 0, 0.1) !important; */
+  background-color: #3949ab !important;                                        /*600 color*/
+  box-shadow: inset 0 -5px 15px -15px rgba(0, 0, 0, 0.1) !important;
   color: #7986cb !important;                                                   /* 300 color*/
+  border-bottom: 1px solid !important;
+  border-bottom-color: #283593 !important;
 }
 
 
@@ -240,19 +245,18 @@ max-width: 250px !important;
 #main-window .tabbrowser-tab:-moz-any(:not([pinned]),[pinned]:not([titlechanged])):not([selected]):hover {
 /*   background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(0,0,0, 0)) !important; */
 /*   background-color: #8c9eff !important; */
+/*   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3) !important; */
   color: #fff !important;
 }
 
 /* Selected Tab (Tab you are currently viewing)*/
 
 #main-window .tabbrowser-tab[selected] {
-  background-color: #3949ab !important;                                       /* 600 color*/
-/*   box-shadow: none !important; */
+  background-color: #5c6bc0 !important;                                       /* 400 color*/
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3) !important;
   color: #fff !important;
   border-bottom: 1px solid !important;
-  border-bottom-color: #283593 !important;                                    /* 800 color*/
-/*   margin-bottom: 0px !important; */
-/*   font-size: 12px !important; */
+  border-bottom-color: #5c6bc0 !important;                                    /* 800 color*/
 }
 
 /* Pinned tab titlechange */
@@ -266,47 +270,17 @@ max-width: 250px !important;
   25% {  transform: scale(1.1);   }
 }
 
-/* new tab button */
-
-.tabs-newtab-button {
-  width: 38px !important;
-  float: right !important;
-  margin-top: 1px !important;
-  padding-left: 2px !important;
-  padding-right: 2px !important;
-  background: #ffffff !important;
-  box-shadow: inset 0 -5px 15px -15px rgba(0, 0, 0, .5) !important;
-  border: 1px solid rgba(71,79,115,.25) !important;
-  border-bottom: none !important;
-  border-radius: 2px 2px 0 0 !important;
-}
-
-.tabs-newtab-button .toolbarbutton-icon {
-  margin-bottom: -3px !important;
-}
-
-.tabs-newtab-button:hover {
-  background-image: -moz-linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .6)) !important;
-}
-
-.tabs-newtab-button:active {
-  background-color: #f2f2f2 !important;
-  box-shadow: none !important;
-  background-image: -moz-linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.5) 50%) !important;
-  color: #444 !important;
-}
-
 /*styling*/
 #searchbar > .searchbar-textbox,
 
 /* The URL Bar... Obviously */
 #urlbar {
 /*  You NEED These two border tags so there isn't a blue bar when you click the url bar */
+    
+    border-top: 1px solid #283593 !important;                                 /* 400 color*/  
     border-bottom: 0px solid !important;
-    border-top: 1px solid #5c6bc0 !important;                                 /* 400 color*/
-
     text-align: center !important;
-    background: #7986cb !important;                                           /* 300 color*/
+    background: #5c6bc0 !important;                                           /* 400 color*/
 /*     padding-left: -1px !important; */
 /*     margin-top: 0px !important;
     
@@ -315,7 +289,7 @@ max-width: 250px !important;
 /*     padding: 0px !important; */
   
   /*The text color for the urlbar*/
-    color: #7986cb !important;                                                /* 300 color*/
+    color: #fff !important;                                                /* 300 color*/
     height: 28px !important;
     font-size: 12px;
 }
@@ -326,7 +300,7 @@ max-width: 250px !important;
 
 #nav-bar {
     height: 26px;
-    background-color: #7986cb !important;                                     /* 300 color*/
+    background-color: #5c6bc0 !important;                                     /* 300 color*/
     margin-left: -6px !important;
     margin-right: -5px !important;
 /*     border-top: -1px #7986cb !important; */
