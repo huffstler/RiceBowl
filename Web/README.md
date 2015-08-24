@@ -2,7 +2,7 @@
 
 Start Page and Firefox css in one:
 
-<a href="https://u.teknik.io/vElUHu.png"><img src="https://u.teknik.io/vElUHu.png" title="source: teknik.io" /></a>
+<a href="https://u.teknik.io/1NVwkO.png"><img src="https://u.teknik.io/1NVwkO.png" title="source: teknik.io" /></a>
 
 TODO:
 
