@@ -2,4 +2,4 @@
 
 Current Desktop:
 
-<a href="https://u.teknik.io/nlVTNk.png"><img src="https://u.teknik.io/nlVTNk.png" title="source: imgur.com" /></a>
+<a href="https://u.teknik.io/M1WvMI.png"><img src="https://u.teknik.io/M1WvMI.png" title="source: imgur.com" /></a>
