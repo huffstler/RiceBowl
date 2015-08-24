@@ -1,108 +1,157 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Welcome!</title><style type="text/css">
-body {
-	background-color: #FFFFFF;
-	margin: auto;
-}
-body,td,th {
-	font-family: Roboto;
-	font-size: 14px;
-	color: #969696;
-}
-a:link {
-	color: #666699;
-	text-decoration: none;
-}
-a:visited {
-	color: #666699;
-	text-decoration: none;
-}
-a:hover {
-	color: #669966;
-	text-decoration: none;
-}
-a:active {
-	color: #666699;
-	text-decoration: none;
-}
-a {
-	font-family: Roboto;
-	font-size: 16px;
-}
-.Estilo3 {color: #996666}
-.Estilo4 {color: #444}
-.Estilo5 {color: #669999}
-.Estilo6 {color: #999966}
 
-.TextField2 { font-family: "Roboto";
-	font-size: 16px;
-	background-color: #FFFFFF;
-	border: 1px solid #969696;
-	color: #444;
-	width: 200px;
-	height: 14px;
-	margin-left: -35px;
-	margin-bottom: 15px;
-}
-</style></head>
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script> -->
+<script src="search.js"></script>
+
+<title>Hey there!</title>
+	<style type="text/css">
+		body {
+			background-color: #5c6bc0;
+			margin: auto;
+		}
+		body,td,th {
+			font-family: Roboto;
+			font-size: 14px;
+			color: #404040;
+		}
+		a:link {
+			color: #404040;
+			text-decoration: none;
+		}
+		a:visited {
+			color: #404040;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #404040;
+			text-decoration: none;
+		}
+		a:active {
+			color: #404040;
+			text-decoration: none;
+		}
+		a {
+			font-family: Roboto;
+			font-size: 16px;
+		}
+		.Estilo1 {color: #404040}
+		.Estilo2 {color: #404040}
+		.Estilo3 {color: #404040}
+		.Estilo4 {color: #404040}
+		.Estilo5 {color: #404040}
+
+		#searchinput {
+			width: 80%;
+			height:32px;
+			border:none;
+			border-radius: 2px;
+			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+			box-sizing: border-box;
+			background-clip: padding-box;
+			outline: none;
+			text-align: center;
+			background-color: rgba(255, 255, 255, 0.85);
+			color: #404040;
+			font-size: 15px;
+			font-family: 'Roboto', sans-serif;
+			display: block;
+			margin: auto;
+		}
+		
+		#tableCard {
+			border:none;
+			border-radius: 2px;
+			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+			box-sizing: border-box;
+			background-clip: padding-box;
+			outline: none;
+			background-color: rgba(255, 255, 255, .85);
+			color: #404040;
+			font-size: 15px;
+			font-family: 'Roboto', sans-serif;
+			display: block;
+			margin: auto;
+		}
+		
+	</style>
+</head>
 
 <body>
 
+<!--
+Insert this where you want your search bar. This is usually in a positioning div, but it's different for everyone
+You might want to change:
+CSS ID
+placeholder (text when not clicked)
+autocomplete (previous searches)
+autofocus (cursor in box on load)
+ 
+Note that you can also put the cursor in the text box by pressed "TAB", thanks to the JS
+-->
 <div>
 <table width="50%" height="100%" align="center">
-
+		
   <tr>
     
-	<td align="center" valign="middle">
+	<td align="center">
 	
-	<table width="350" border="0px" cellspacing="5" cellpadding="0">
+	<input id="searchinput" placeholder="Options: -a, -w, -y" type="text"  autocomplete="on">
+	
+	 <br> 
+	
+	<table id="tableCard" width="80%" border="0px" cellspacing="10" cellpadding="0">
    		
-		  <tr>
-            <td><span class="Estilo3">Mine&nbsp;&nbsp;&nbsp;|</span>
-			&nbsp;&nbsp;<a href="https://www.drive.google.com">Drive</a>&nbsp;&nbsp;||
-			&nbsp;&nbsp;<a href="https://www.github.com">Github</a>&nbsp;&nbsp;||
-			&nbsp;&nbsp;<a href="https://www.gmail.com">Gmail</a>&nbsp;&nbsp;||
-			&nbsp;&nbsp;<a href="https://www.udel.edu/sakai">Sakai</a>
-			</td>
+			  <tr>
+				  <td><span class="Estilo1">Comix |</span>
+						&nbsp;&nbsp;<a href="http://xkcd.com/">XKCD</a>&nbsp;&nbsp;||
+						&nbsp;&nbsp;<a href="http://www.oglaf.com">Oglaf</a>&nbsp;&nbsp;||
+						&nbsp;&nbsp;<a href="http://www.theoatmeal.com">Oatmeal</a>
+					</td>
+			  </tr>
+			  
+			  <tr>
+				  <td><span class="Estilo2">Social |</span>
+						&nbsp;&nbsp;<a href="http://blackbox4windows.com/">BB4W</a>&nbsp;&nbsp;||
+						&nbsp;&nbsp;<a href="http://www.facebook.com">Facebook</a>&nbsp;&nbsp;||
+						&nbsp;&nbsp;<a href="http://www.plus.google.com">G+</a>&nbsp;&nbsp;||
+						&nbsp;&nbsp;<a href="http://www.linkedin.com">LinkedIn</a>&nbsp;&nbsp;||
+						&nbsp;&nbsp;<a href="http://forum.xda-developers.com/galaxy-s4-att">XDA</a>
+					</td>
+			  </tr>
+			  
+			 <tr>
+				<td><span class="Estilo3">Mine&nbsp;&nbsp;&nbsp;|</span>
+					&nbsp;&nbsp;<a href="https://www.drive.google.com">Drive</a>&nbsp;&nbsp;||
+					&nbsp;&nbsp;<a href="https://www.github.com">Github</a>&nbsp;&nbsp;||
+					&nbsp;&nbsp;<a href="https://www.gmail.com">Gmail</a>&nbsp;&nbsp;||
+					&nbsp;&nbsp;<a href="https://www.udel.edu/sakai">Sakai</a>
+				</td>
           </tr>
 
           <tr>
-            <td><span class="Estilo5">Media |</span>
-			&nbsp;&nbsp;<a href="https://thepiratebay.am">PB</a>&nbsp;&nbsp; ||
-			&nbsp;&nbsp;<a href="http://www.songza.com">Songza</a>&nbsp;&nbsp;||
-			&nbsp;&nbsp;<a href="http://blackbox4windows.com/">BB4W</a>&nbsp;&nbsp;||
-			&nbsp;&nbsp;<a href="http://forum.xda-developers.com/galaxy-s4-att">XDA</a>
-			</td>
+				<td><span class="Estilo4">Media |</span>
+					&nbsp;&nbsp;<a href="http://www.itch.io">Itch</a>&nbsp;&nbsp;||
+					&nbsp;&nbsp;<a href="http://netflix.com/">Netflix</a>&nbsp;&nbsp;||
+					&nbsp;&nbsp;<a href="https://thepiratebay.am">PB</a>&nbsp;&nbsp; ||
+					&nbsp;&nbsp;<a href="http://play.google.com/">Play Music</a>&nbsp;&nbsp;||
+					&nbsp;&nbsp;<a href="http://www.songza.com">Songza</a>&nbsp;&nbsp;||
+					&nbsp;&nbsp;<a href="http://www.twitch.tv">Twitch</a>
+				</td>
           </tr>
 
           <tr>
-            <td><span class="Estilo6">Misc &nbsp;&nbsp;&nbsp;|</span>
-			&nbsp;&nbsp;<a href="http://4chan.org/">4chan</a>&nbsp;&nbsp;||
-			&nbsp;&nbsp;<a href="http://www.myanimelist.net">MAL</a>&nbsp;&nbsp;||
-			&nbsp;&nbsp;<a href="https://teknik.io/">Teknik</a>&nbsp;&nbsp;||
-			&nbsp;&nbsp;<a href="http://reddit.com">Reddit</a>
-			</td>
+				<td><span class="Estilo5">Misc &nbsp;&nbsp;&nbsp;|</span>
+					&nbsp;&nbsp;<a href="http://4chan.org/">4chan</a>&nbsp;&nbsp;||
+					&nbsp;&nbsp;<a href="http://www.myanimelist.net">MAL</a>&nbsp;&nbsp;||
+					&nbsp;&nbsp;<a href="http://www.medium.com">Medium</a>&nbsp;&nbsp;||
+					&nbsp;&nbsp;<a href="http://reddit.com">Reddit</a>&nbsp;&nbsp;||
+					&nbsp;&nbsp;<a href="https://teknik.io/">Teknik</a>
+				</td>
           </tr>
 		  
-		  <tr>
-		  <td><span class="Estilo6">Hold &nbsp;&nbsp;&nbsp;|</span>
-			&nbsp;&nbsp;<a href="www.example.com">Example</a>&nbsp;&nbsp;||
-			&nbsp;&nbsp;<a href="www.example.com">Example</a>&nbsp;&nbsp;||
-			&nbsp;&nbsp;<a href="www.example.com">Example</a>&nbsp;&nbsp;||
-			&nbsp;&nbsp;<a href="www.example.com">Example</a>
-			</td>
-		  </tr>
-		  
-		  <tr>
-		  <td><span class="Estilo6">Hold &nbsp;&nbsp;&nbsp;|</span>
-			&nbsp;&nbsp;<a href="http://4chan.org/">Aaa</a>&nbsp;&nbsp;||
-			&nbsp;&nbsp;<a href="http://www.myanimelist.net">Bbb</a>&nbsp;&nbsp;||
-			&nbsp;&nbsp;<a href="https://teknik.io/">Ccc</a>&nbsp;&nbsp;||
-			&nbsp;&nbsp;<a href="http://reddit.com">Ddd</a>
-			</td>
-		  </tr>
 
         </table>
 		

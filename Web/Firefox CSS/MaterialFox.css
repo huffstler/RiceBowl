@@ -1,3 +1,5 @@
+/* @import "file:\\C:\\Users\\Patrick\\git\\Web\\Firefox CSS\\MaterialFox.css"; */
+
 /*                          
 
                              _______________
@@ -180,30 +182,27 @@ select > input {
   margin-top: 5px !important;
   margin-bottom: 0px !important;
   margin-left: -17px !important;
-/*   margin-right: -35px !important; */
-/*   padding-right: -5px !important; */
+  margin-right: -35px !important;
   border: none !important;
   background: #3949ab !important;                          /* 700 color*/
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3) !important;
 }
 
 #main-window .tabbrowser-tab {
-  border: 0 !important;
+  border: 0px !important;
   background: 0 !important;
   border-radius: 0 !important;
-  padding: 0 !important;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3) !important;
+  padding: 1px !important;
 }
 
 tab {
-  font-family: "Segoe UI", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   text-align: center !important;
   
 }
 
 .tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {
-min-width: 25px !important;
-max-width: 250px !important;
+  min-width: 20px !important;
+  max-width: 250px !important;
 }
 
 .tabbrowser-tab:not([pinned]) .tab-throbber,
@@ -221,7 +220,7 @@ max-width: 250px !important;
 /* Standard Tabs */
 
 #main-window .tabbrowser-tab {
-/*   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3) !important; */
+  
 }
 
 /* Not sure what this changes unfortunately */
@@ -233,19 +232,15 @@ max-width: 250px !important;
 
 #main-window .tabbrowser-tab:not(:-moz-lwtheme)  {
   background-color: #3949ab !important;                                        /*600 color*/
-  box-shadow: inset 0 -5px 15px -15px rgba(0, 0, 0, 0.1) !important;
   color: #7986cb !important;                                                   /* 300 color*/
-  border-bottom: 1px solid !important;
-  border-bottom-color: #283593 !important;
+/*   border-bottom: 0px solid !important; */
+/*   border-bottom-color: #3949ab !important; */
 }
 
 
 /* Tab Hover for unselected tabs (tabs you're hovering over)*/
 
 #main-window .tabbrowser-tab:-moz-any(:not([pinned]),[pinned]:not([titlechanged])):not([selected]):hover {
-/*   background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(0,0,0, 0)) !important; */
-/*   background-color: #8c9eff !important; */
-/*   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3) !important; */
   color: #fff !important;
 }
 
@@ -253,7 +248,7 @@ max-width: 250px !important;
 
 #main-window .tabbrowser-tab[selected] {
   background-color: #5c6bc0 !important;                                       /* 400 color*/
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.23) !important;
   color: #fff !important;
   border-bottom: 1px solid !important;
   border-bottom-color: #5c6bc0 !important;                                    /* 800 color*/
@@ -275,23 +270,18 @@ max-width: 250px !important;
 
 /* The URL Bar... Obviously */
 #urlbar {
-/*  You NEED These two border tags so there isn't a blue bar when you click the url bar */
-    
-    border-top: 1px solid #283593 !important;                                 /* 400 color*/  
-    border-bottom: 0px solid !important;
+    border: none !important; 
+    border-radius: 0 !important;
+    padding: 0 2px 0 9px !important;
+    height: 32px !important;
+    margin-top: -1px !important;
+    margin-bottom: -1px !important;
     text-align: center !important;
     background: #5c6bc0 !important;                                           /* 400 color*/
-/*     padding-left: -1px !important; */
-/*     margin-top: 0px !important;
-    
-    margin-right: 0px !important;*/
-/*     border-bottom: 1px solid #5c6bc0 !important; */
-/*     padding: 0px !important; */
   
   /*The text color for the urlbar*/
-    color: #fff !important;                                                /* 300 color*/
-    height: 28px !important;
-    font-size: 12px;
+    color: #fff !important;                                                /* white color*/
+    font-size: 12px !important;
 }
 
 #urlbar:hover {
@@ -299,19 +289,15 @@ max-width: 250px !important;
 }
 
 #nav-bar {
-    height: 26px;
+/*   display: none !important; */
+    height: 28px;
     background-color: #5c6bc0 !important;                                     /* 300 color*/
     margin-left: -6px !important;
-    margin-right: -5px !important;
-/*     border-top: -1px #7986cb !important; */
-/*     border-bottom: -1px #7986cb !important; */
+    margin-right: -4px !important;
+    border-top: none !important;
+    border-bottom: none !important;
     color: #fff !important;
-/*     border-top: 0px solid #3f51b5 !important; */
-/*     margin-bottom: 0px !important; */
-
-/*     margin-top: 0px !important; */
-/*     border-left: none !important;
-    border-right: none !important; */
+    margin-bottom: -1px !important; /* YOU NEED THIS TO KEEP THE GREY PIXEL LINE OUT OF SIGHT */
 }
 
   #PanelUI-button, #customization-panel-container,
