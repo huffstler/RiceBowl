@@ -1,6 +1,6 @@
 #WebRice
 
-Start Page and Firefox css in one:
+Start Page (Currently In the "Simple" folder) and Firefox css in one:
 
 <a href="https://u.teknik.io/1NVwkO.png"><img src="https://u.teknik.io/1NVwkO.png" title="source: teknik.io" /></a>
 
