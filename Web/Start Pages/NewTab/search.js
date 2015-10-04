@@ -45,7 +45,7 @@ function search(query){
 		query=query.substr(3);
 		window.location = 
 			"http://alpha.wallhaven.cc/search?q=" + 
-			query.concat("&categories=111&purity=100&resolutions=1366x768&sorting=relevance&order=desc");
+			query.concat("&categories=111&purity=100&resolutions=1920x1080&sorting=relevance&order=desc");
 			break;
 
 //        case "-4":
