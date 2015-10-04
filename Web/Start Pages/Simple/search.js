@@ -19,18 +19,35 @@ function search(query){
             window.location = "http://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=" +
                 query.replaceChars(" ", "+");
             break;
+
         case "-y":
             query = query.substr(3);
             window.location =
                 "https://www.youtube.com/results?search_query=" +
                 query.replaceChars(" ", "+");
             break;
+
         case "-w":
             query = query.substr(3);
             window.location =
                 "https://en.wikipedia.org/w/index.php?search=" +
                 query.replaceChars(" ", "%20");
             break;
+
+	case "-m":
+	    query = query.substr(3);
+	    window.location = 
+		"http://www.wolframalpha.com/input/?i=" + 
+		query.replaceChars("+", "%2B");
+		break;
+
+	case "-h":
+		query=query.substr(3);
+		window.location = 
+			"http://alpha.wallhaven.cc/search?q=" + 
+			query.concat("&categories=111&purity=100&resolutions=1366x768&sorting=relevance&order=desc");
+			break;
+
 //        case "-4":
  //           query = query.substr(3);
  //           window.location =
