@@ -26,14 +26,14 @@ BlackboxBar.item: Space
 #This is a test for symlinking
 # ----------------
 # General Settings
-!BlackboxBar.placement: TopCenter
+BlackboxBar.placement: TopCenter
 BlackboxBar.position.x: 192
 BlackboxBar.position.y: 0
-BlackboxBar.widthPercent: 80
+BlackboxBar.widthPercent: 100
 BlackboxBar.useSlit: false
 BlackboxBar.pluginToggle: true
 BlackboxBar.OnTop: true
-BlackboxBar.autoHide: false
+BlackboxBar.AutoHide: false
 BlackboxBar.autoRaise: true
 BlackboxBar.snapToEdge: 0
 BlackboxBar.snapWindow: 0
@@ -49,7 +49,7 @@ BlackboxBar.tasks.reverse: false
 BlackboxBar.tasks.current: true
 BlackboxBar.tasks.sysmenu: false
 BlackboxBar.tasks.drawBorder: true
-BlackboxBar.tasks.maxWidth: 100
+BlackboxBar.tasks.maxWidth: 33
 
 ------------
 # Icons
@@ -61,7 +61,6 @@ BlackboxBar.icon.size: 16
 # Clock-Format
 BlackboxBar.strftimeFormat: %a %d-%m %I:%M
 BlackboxBar.strftimeTipsFormat: %Y-%m-%d %a
-!BlackboxBar.strftimeTipsFormat: %Y-%m-%d %a
 
 # ---------------
 # Special Options
@@ -72,12 +71,17 @@ BlackboxBar.sendToSwitchTo: true
 
 # -------------------------
 # hidden icons (auto saved)
-BlackboxBar.tray.hidden.count: 5
-BlackboxBar.tray.hidden.1: "#32770",49374
-BlackboxBar.tray.hidden.2: "Afx:0000000140000000:0",128
-BlackboxBar.tray.hidden.3: "GWXTrayIcon",0
-BlackboxBar.tray.hidden.4: "WindowsForms10.Window.0.app.0.34f5582_r31_ad1",1
-BlackboxBar.tray.hidden.5: "WorkerW",123
+BlackboxBar.tray.hidden.count: 10
+BlackboxBar.tray.hidden.1: "ytWindow",10159320
+BlackboxBar.tray.hidden.2: "WindowsForms10.Window.0.app.0.34f5582_r37_ad1",1
+BlackboxBar.tray.hidden.3: "WindowsForms10.Window.0.app.0.34f5582_r37_ad1",1
+BlackboxBar.tray.hidden.4: "SkyDrive Class Name {090B42FF-7B26-4416-99B6-CB17896CF07C}",501
+BlackboxBar.tray.hidden.5: "WindowsForms10.Window.0.app.0.34f5582_r12_ad1",1
+BlackboxBar.tray.hidden.6: "USurface_101640",1
+BlackboxBar.tray.hidden.7: "SystemTray_Main",1225
+BlackboxBar.tray.hidden.8: "Afx:0000000140000000:0",128
+BlackboxBar.tray.hidden.9: "WindowsForms10.Window.0.app.0.34f5582_r37_ad1",1
+BlackboxBar.tray.hidden.10: "#32770",49397
 BlackboxBar.minHeight: 28
 BlackboxBar.clock.tips: false
 BlackboxBar.clock.Btn1Click: 

@@ -66,5 +66,5 @@ bbleanskin.option.sendToSwitchTo: true
 bbleanskin.windows.menu.Height: 0
 !bbleanskin.windows.menu.Font: Arial
 !bbleanskin.windows.menu.FontHeight: 0
-bbleanskin.windows.ScrollbarSize: 15
+bbleanskin.windows.ScrollbarSize: 0
 !bbleanskin.windows.setTooltipColor: false
