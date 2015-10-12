@@ -3,7 +3,6 @@
 
 # Lines starting with # or ! are ignored
 # All items are configurable from the menu
-#This is a test for symlinking
 # - the toolbar -
 session.screen0.toolbar.enabled: false
 session.screen0.toolbar.placement: TopCenter
@@ -15,12 +14,12 @@ session.screen0.toolbar.alpha.enabled: false
 session.screen0.toolbar.alpha.value: 224
 
 # - the menu -
-session.menu.position.x: 280
-session.menu.position.y: 148
+session.menu.position.x: 1355
+session.menu.position.y: 96
 session.menu.maxWidth: 300
-session.menu.popupDelay: 0
+session.menu.popupDelay: 80
 session.menu.mouseWheelFactor: 1
-session.menu.alpha.enabled: false
+session.menu.alpha.enabled: true
 session.menu.alpha.value: 255
 session.menu.onTop: true
 session.menu.sticky: true
@@ -35,9 +34,9 @@ session.menu.icon.hue: 60
 session.menu.icon.size: 0
 session.menu.overlap: 0
 session.menu.spacing: 5
-session.menu.separator.style: bevel
-session.menu.separator.fullWidth: false
-session.menu.separator.compact: false
+session.menu.separator.style: flat
+session.menu.separator.fullWidth: true
+session.menu.separator.compact: true
 session.menu.bullet.enabled: true
 session.menu.scrollButton.hue: 8
 session.menu.scroller.position: none
@@ -67,14 +66,14 @@ session.screen0.strftimeformat: %H:%M %a %d %b
 
 # - workspace options -
 session.screen0.workspaces_wraparound: true
-session.screen0.workspaces: 3
-session.screen0.workspacesX: 3
+session.screen0.workspaces: 4
+session.screen0.workspacesX: 4
 session.screen0.workspacesY: 1
 session.workspaces.followActive: true
 session.workspaces.restoreToCurrent: true
 session.workspaces.altMethod: true
 session.workspaces.styleXPFix: false
-session.screen0.workspaceNames: Personal,Work,IRC,Vbox
+session.screen0.workspaceNames: Web,Code,Irc,School
 
 # - additional menu settings  -<S-F12>
 session.autoraisedelay: 250
@@ -103,4 +102,4 @@ session.screen0.slit.ontop: true
 session.screen0.slit.toggle: false
 
 # - current style -
-session.styleFile: styles\Case\case
+session.styleFile: styles\Red-Zen

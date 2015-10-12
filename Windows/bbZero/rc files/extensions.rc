@@ -14,7 +14,7 @@ blackbox.editor: notepad++.exe
 
 # -----------------------------------------------------
 # Drag'n-dropped background images are saved here
-blackbox.background.rootCommand: bsetroot -full "C:\Users\Patrick\Pictures\Walls\BlueMountains.jpg"
+blackbox.background.rootCommand: bsetroot -full "C:\bbZero\backgrounds\Bonsai.jpg"
 blackbox.background.enabled: true
 blackbox.background.smartWallpaper: true
 
@@ -40,10 +40,10 @@ blackbox.desktop.CtrlRightClick: @BBCore.ShowMenu tasks
 
 # configuration menu
 blackbox.desktop.AltRightClick: @BBCore.ShowMenu configuration
-blackbox.desktop.marginTop: 55
-blackbox.desktop.marginBottom: 25
-blackbox.desktop.marginLeft: 25
-blackbox.desktop.marginRight: 25
+blackbox.desktop.marginTop: 50
+blackbox.desktop.marginBottom: 20
+blackbox.desktop.marginLeft: 20
+blackbox.desktop.marginRight: 20
 
 # alternative menu
 ! blackbox.desktop.CtrlRightClick: @BBCore.ShowMenu alt-menu.rc
@@ -80,27 +80,28 @@ blackbox.desktop.marginRight: 25
 
 # Enable this feature?
 blackbox.global.fonts.enabled: false
+blackbox.menu.grip.enabled: false
 
 # override font definitions from styles:
-blackbox.global.toolbar.font: verdana
-blackbox.global.toolbar.fontHeight: 13
-blackbox.global.toolbar.fontWeight: normal
+!blackbox.global.toolbar.font: verdana
+!blackbox.global.toolbar.fontHeight: 13
+!blackbox.global.toolbar.fontWeight: normal
 
-blackbox.global.menu.title.font: verdana
-blackbox.global.menu.title.fontHeight: 13
-blackbox.global.menu.title.fontWeight: bold
+!blackbox.global.menu.title.font: verdana
+!blackbox.global.menu.title.fontHeight: 13
+!blackbox.global.menu.title.fontWeight: bold
 
-blackbox.global.menu.frame.font: verdana
-blackbox.global.menu.frame.fontHeight: 13
-blackbox.global.menu.frame.fontWeight: normal
+!blackbox.global.menu.frame.font: verdana
+!blackbox.global.menu.frame.fontHeight: 13
+!blackbox.global.menu.frame.fontWeight: normal
 
-blackbox.global.window.font: verdana
-blackbox.global.window.fontHeight: 13
-blackbox.global.window.fontWeight: bold
-blackbox.appearance.bullet.unix: false
-blackbox.snap.padding: 5
-blackbox.snap.threshold: 5
-blackbox.snap.toPlugins: false
-blackbox.menu.grip.enabled: false
+!blackbox.global.window.font: verdana
+!blackbox.global.window.fontHeight: 13
+!blackbox.global.window.fontWeight: bold
+!blackbox.appearance.bullet.unix: false
+!blackbox.snap.padding: -4
+!blackbox.snap.threshold: 0
+!blackbox.snap.toPlugins: false
+!blackbox.menu.grip.enabled: false
 
 # -----------------------------------------------------

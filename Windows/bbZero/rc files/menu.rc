@@ -1,0 +1,72 @@
+# -----------------------------------------------------------------
+# bbZero 1.17.x - MENU FILE
+# -----------------------------------------------------------------
+
+# Available menu commands are listed in the documentation.
+#This is a test for symlinking
+[begin] (Zen.)
+	
+	[submenu] (EZ Access)
+		[exec] (Firefox) {"D:\Programs\Firefox\firefox.exe"}
+		[exec] (HexChat) {"D:\Programs\HexChat\hexchat.exe"}
+		[exec] (Npp){"C:\Program Files (x86)\Notepad++\notepad++.exe"}
+		[exec] (Steam) {"D:\Programs\Steam\steam.exe"}
+		[exec] (VirtualBox) {"C:\Program Files\Oracle\VirtualBox\VirtualBox.exe"}
+	[end]
+
+[nop]
+	
+	[submenu] (Files)
+
+		[path] (Git){"C:\Users\Patrick\git"}
+		[path] (Home) {PERSONAL}
+		[path] (Root) {DRIVES}
+		[path] (Trash) {BITBUCKET}
+		[run]  (Execute)
+
+	[end]
+	
+	[submenu] (Programs)
+	
+		[path] (Admin) {CONTROLS}
+		[path] {COMMON_STARTMENU|STARTMENU}
+		
+	[end]
+		
+	[submenu] (Power)
+	
+		[lockworkstation] (Lock)
+		[logoff] (Logoff)
+		[suspend] (Standby)
+		[reboot] (Reboot)
+		[shutdown] (Shutdown)
+	
+	[end]
+
+	[submenu] (Shell)
+		
+		[submenu] (Config)
+			
+			[editblackbox] (Blackbox)
+			[editextensions] (Extensions)
+			[edit] (Hotkeys) {plugins\bbKeys\bbKeys.rc}
+			[editmenu] (Menu)
+			[editplugins] (Plugins)
+			[config] (System)
+			
+		[end]
+			
+		[submenu] (Visuals)
+			
+				[include] {plugins\bbLeanSkin\bbLeanSkinMenu.rc}
+				[editstyle] (Current Style)
+				[stylesmenu] (Styles) {styles}
+				
+		[end]
+			
+		[exec] (Install/Uninstall) {bsetshell.exe}
+		[restart] (Restart)
+		[exit]  (Quit)
+			
+	[end]
+[end]
