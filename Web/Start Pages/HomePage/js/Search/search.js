@@ -63,7 +63,7 @@ function search(query){
  
 window.onload = function(){
     // search
-    searchinput = document.getElementById("searchinput");
+    searchinput = document.getElementById("searchbox");
     if(!!searchinput){
         searchinput.addEventListener("keypress", function(a){
             var key = a.keyCode;

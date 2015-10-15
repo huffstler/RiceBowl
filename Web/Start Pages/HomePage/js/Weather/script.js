@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 $(window).bind("load", function() {
 	$(".icon").each(function() {
-		$(this).attr('src','images/weather/' + $(this).parent().css("background-image").substring(45,47) + '.svg');
+		$(this).attr('src','js/Weather/images/weather/' + $(this).parent().css("background-image").substring(45,47) + '.svg');
 	});
 	$('.weatherForecastItem').css('background-image', 'none');
 });
