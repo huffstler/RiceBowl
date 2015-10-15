@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/**
+ * Zazar Presentation Framework
+ *
+ * Stylesheet: theme.css
+ *
+ * Version: beta
+ * (C) 2011-2012 Zazar Ltd
+ * 
+ * Description: Example theme stylesheet
+ *
+ **/
+
+
+/* Styling for screens */
+
+@media screen, projection {
+
+	/* Accordion */
+
+	.accordion {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		background-color: #fff;
+	}
+	.accordion h4, .accordion h4 a { color: #fff; }
+	.accordion h4 {
+		margin: 0;
+		padding: 0.5em 1em;
+		font-size: 100%;
+		font-weight: normal;
+		line-height: 1.5em;
+		background-color: #888;
+		border-bottom: 1px solid #aaa;
+	}
+	.accordion h4:hover { background-color: #444; }
+	.accordion p {
+		margin: 0;
+		padding: 1em;
+		border: 1px solid #aaa;
+		border-top: none;
+	}
+
+
+	/* Navigation */
+
+	.navigation li { background-color: #888; }
+	.navigation ul li { background-color: transparent; }
+	.navigation li ul {
+		background: #222;
+		background: rgba(25,25,25,0.92);
+		-webkit-box-shadow: 3px 3px 3px #666;
+		-moz-box-shadow: 3px 3px 3px #666;
+		box-shadow: 3px 3px 5px #666;
+	}
+	.navigation a span { background-position: 0 -100px; }
+	.navigation ul a span, .navigation.vertical a span { background-position: 0 0; }
+	.navigation a { color: #fff; }
+	.navigation li a { border-left: 1px solid #aaa; }
+	.navigation.horizontal li a { border-bottom: 1px solid #aaa; }
+	.navigation.vertical li a { border-bottom: 1px solid #aaa; }
+	.navigation a:hover { background-color: #444; }
+
+
+	/* Slider */
+
+	.sliderFrame { border: 1px solid #888; }
+	.sliderItem { padding: 0.5em; }
+
+
+	/* Pagination */
+
+	.pagination li a {
+		color: #000;
+		background: #ccc;
+		background: rgba(204,204,204,0.65);
+		border: 1px solid #444;
+	}
+	.pagination li a:hover {
+		background: #aaa;
+		background: rgba(170,170,170,0.65);
+	}
+	.pagination li.current a {
+		background: #222;
+		background: rgba(34,34,34,0.65);
+	}
+	
+
+	/* Tabs */
+
+	.tabs li { background-color: #ccc; }
+	.tabs a {
+		color: #000;
+		text-decoration: none;
+	}
+	.tabs li.current, .tab { background-color: #fff; }
+	.tabs li.current a { border-color: #fff; }
+
+
+	/* Ticker */
+
+	.ticker { padding: 0.5em; }
+	.ticker {
+		background-color: #ccc;
+		border: 1px solid #888;
+	}
+
+
+	/* Tooltips */
+
+	.tooltipPopup {
+		color: #fff;
+		text-shadow: 0 0 2px #000;
+		background: #222;
+		background: rgba(25,25,25,0.92);
+		border: 1px solid rgba(255,255,255,0.25);
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-box-shadow: 3px 3px 3px #666;
+		-moz-box-shadow: 3px 3px 3px #666;
+		box-shadow: 1px 1px 3px #666;
+	}
+}

@@ -1,3 +1,4 @@
+/* Search JavaScript */
 String.prototype.replaceChars = function(character, replacement){
     var str = this;
     var a;

@@ -1,0 +1,107 @@
+body{
+	
+	/*Font*/
+	font-family: Noto Sans;
+	font-size: 100%;
+	
+	/* Positioning */
+	margin: auto;
+	text-align: justify;
+	
+	/*Colors*/
+	color: black;
+	background-color:  linen; /*Make this the same color as the footer text */
+	
+}
+
+#topcard{
+	margin: auto;
+	margin-top: 25px;
+	background-color: rgba(255, 255, 255, .85);
+	color: #404040;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	outline: none;
+	<!--box-sizing: border-box; -->
+	<!--background-clip: padding-box; -->
+	<!-- if you move this any more lines up, the card width will shrink. I have NO IDEA WHY -->
+	border: 0px; 
+	width: 90%;
+	cellspacing: 8;
+	cellpadding: 0;
+	align: center;
+	padding-bottom: 5px;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+
+#midcard{
+	margin: auto;
+	background-color: rgba(255, 255, 255, .85);
+	color: #404040;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	outline: none;
+	<!--box-sizing: border-box; -->
+	<!--background-clip: padding-box; -->
+	<!-- if you move this any more lines up, the card width will shrink. I have NO IDEA WHY -->
+	border: 0px; 
+	width: 90%;
+	cellspacing: 8;
+	cellpadding: 0;
+	align: center;
+	padding-bottom: 5px;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+#btmcard{
+	margin: auto;
+	background-color: rgba(255, 255, 255, .85);
+	color: #404040;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	outline: none;
+	border: 0px; 
+	width: 90%;
+	cellspacing: 8;
+	cellpadding: 0;
+	align: center;
+	padding-bottom: 5px;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+#rss{
+	
+	text-decoration: none;
+	
+}
+
+#weather{
+	display: block;
+	padding-bottom: 15%;
+	font-size: 1vw;
+	margin-top:10%
+	
+}
+
+#currentWeather, .weatherForecastText, .weatherForecastDate{
+	display: none;
+}
+
+.icon {
+	max-width: 100% !important;
+	margin-bottom: -15%;
+}
+
+.weatherForecastItem{
+	display: block;
+	float: left;
+	padding-right: 5%;
+	padding-left: 4%;
+	width: 10%;
+	background-image: none;
+	text-align: center;
+}

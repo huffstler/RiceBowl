@@ -104,8 +104,10 @@ taskmgr.exe
 devenv.exe
 
 #user Additions
-xul.dll
-SumatraPDF.exe
-PushBullet_client.exe
+	xul.dll
+	SumatraPDF.exe
+	PushBullet_client.exe
 	#New Window that pops up on making virtual machine in Vbox
-VirtualBox.exe:QWidget 
+	VirtualBox.exe:QWidget
+	explorerframe.dll
+	AIMP.Runtime.dll
