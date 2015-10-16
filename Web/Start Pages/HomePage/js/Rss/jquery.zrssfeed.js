@@ -33,13 +33,13 @@
 		var defaults = {
 			limit: 10,
 			offset: 1,
-			header: true,
-			titletag: 'h4',
+			header: false,
+			titletag: 'h5',
 			date: true,
-			dateformat: 'datetime',
-			content: true,
+			dateformat: 'date',
+			content: false,
 			snippet: true,
-			media: true,
+			media: false,
 			showerror: true,
 			errormsg: '',
 			key: null,
@@ -125,14 +125,14 @@
 		}
 		
 		// Add header if required
-		if (options.header)
-			html +=	'<div class="rssHeader">' +
-				'<a href="'+feeds.link+'" title="'+ feeds.description +'">'+ feeds.title +'</a>' +
-				'</div>';
+		//if (options.header)
+			//html +=	'<div class="rssHeader">' +
+				//'<a href="'+feeds.link+'" title="'+ feeds.description +'align="center"">'+ feeds.title +'</a>' +
+				//'</div>';
 			
 		// Add body
-		html += '<div class="rssBody">' +
-			'<ul>';
+//		html += '<div class="rssBody">' +
+//			'<ul>';
 
 
 		// Add feeds

@@ -15,7 +15,7 @@
 	</div>
 
 	<div id="midcard">
-		<input id="searchbox" placeholder="Options: -a, -h, -m, -w, -y" type="text" autofocus="1"  autocomplete="1"></input>
+		<input id="searchbox" placeholder="Options: -a, -h, -m, -w, -y" type="text" autofocus="1"  autocomplete="true"></input>
 		
 		<!-- Put table of links here! -->
 		<table id="links" align="center">
@@ -65,7 +65,7 @@
 <script src="lib\jquery-2.1.1.js"></script>
 <script src="lib\jquery.zweatherfeed.min.js"></script>
 
-<script src="js\Rss\jquery.zrssfeed.min.js" type="text/javascript"></script>
+<script src="js\Rss\jquery.zrssfeed.js" type="text/javascript"></script>
 
 <script src="js\Search\search.js" type="text/javascript"></script>
 
@@ -73,7 +73,7 @@
 
 <script type="text/javascript">
 $(document).ready(function () {
-	$('#rss').rssfeed('http://feeds.reuters.com/reuters/oddlyEnoughNews', {
+	$('#rss').rssfeed('http://myanimelist.net/rss.php?type=news', {
 		limit: 4
 	});
 });

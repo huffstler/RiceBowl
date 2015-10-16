@@ -38,29 +38,20 @@ body{
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 	outline: none;
 	width: 90%;
-	cellspacing: 8;
-	cellpadding: 0;
-	align: center;
 	padding-bottom: 5px;
-	font-family: 'Roboto', sans-serif;
 	
 }
 
 #btmcard{
 	margin: auto;
 	margin-top: 1%;
-	padding-top: 2%;
-	padding bottom: 2%;
+	padding-top: 1%;
+	padding bottom: 1%;
 	background-color: white;
 	color: #404040;
-	border-radius: 2px;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 	outline: none;
-	border: 0px; 
-	width: 90%;
-	align: center;
-	padding-bottom: 5px;
-	font-family: 'Roboto', sans-serif;
+	width: 60%;
 	
 }
 
@@ -70,6 +61,8 @@ body{
 
 #rss{
 	
+	padding: 3%;
+	text-align: center;
 	
 }
 
