@@ -35,7 +35,7 @@
 			offset: 1,
 			header: false,
 			titletag: 'h5',
-			date: true,
+			date: false,
 			dateformat: 'date',
 			content: false,
 			snippet: true,
