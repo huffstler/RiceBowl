@@ -1,1 +1,203 @@
-config
+set $mod Mod1
+
+# Name workspaces
+
+set $tag1 "1: home"
+set $tag2 "2: web"
+set $tag3 "3: term"
+set $tag4 "4: media"
+set $tag5 "5: code"
+set $tag6 "6: comm"
+set $tag7 "7: XXX"
+set $tag8 "8: misc"
+set $tag9 "9: misc2"
+set $tag10 "10: misc3"
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+font pango: Terminus 8 
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# start dmenu (a program launcher)
+bindsym $mod+space exec dmenu_run -b
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+b split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+#bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# switch to workspace
+bindsym $mod+1 workspace $tag1
+bindsym $mod+2 workspace $tag2
+bindsym $mod+3 workspace $tag3
+bindsym $mod+4 workspace $tag4
+bindsym $mod+5 workspace $tag5
+bindsym $mod+6 workspace $tag6
+bindsym $mod+7 workspace $tag7
+bindsym $mod+8 workspace $tag8
+bindsym $mod+9 workspace $tag9
+bindsym $mod+0 workspace $tag10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $tag1
+bindsym $mod+Shift+2 move container to workspace $tag2
+bindsym $mod+Shift+3 move container to workspace $tag3
+bindsym $mod+Shift+4 move container to workspace $tag4
+bindsym $mod+Shift+5 move container to workspace $tag5
+bindsym $mod+Shift+6 move container to workspace $tag6
+bindsym $mod+Shift+7 move container to workspace $tag7
+bindsym $mod+Shift+8 move container to workspace $tag8
+bindsym $mod+Shift+9 move container to workspace $tag9
+bindsym $mod+Shift+0 move container to workspace $tag10
+
+######################
+### CUSTOM HOTKEYS ###
+######################
+
+#Volume Controls
+bindsym Mod4+Right exec pactl set-sink-volume 0 +5% #Raise Vol
+bindsym Mod4+Left exec pactl set-sink-volume 0 -5% #Lower Vol
+bindsym Mod4+space exec pactl set-sink-mute 0 toggle #mute
+
+#Brightness Controls
+bindsym Mod4+Up exec xbacklight -inc 5
+bindsym Mod4+Down exec xbacklight -dec 5
+
+#ScreenLock
+bindsym Mod4+l exec i3lock -i ~/Media/pictures/walls/convertedlockscreen.png
+
+#Scratchpad
+bindsym $mod+Shift+o move scratchpad
+bindsym $mod+o scratchpad show
+
+##############
+### VISUAL ###
+##############
+
+#Window Colors
+#		 	 Border	   Bg	  Text
+client.focused		#000000 #6384b9 #ffffff
+client.focused_inactive	#000000 #3f5d8f #ffffff
+client.unfocused	#000000	#121212 #ffffff
+client.urgent		#f44336 #ffeb3b	#000000
+client.background	#000fff	#fff000 #f0f0f0
+
+# Automatically hide titlebar
+new_window none
+for_window [class="^.*"] border pixel 5
+#new_window pixel 5
+
+# Window gaps
+#smart_gaps on
+#gaps inner 15
+#gaps outer 5
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+bar {
+
+	font: terminus 8
+	mode dock
+	position top
+	status_command i3status
+	colors {
+#				   	 Border    Bg     Text
+		focused_workspace  	#e5b0ff #232323 #c0c0c0
+		active_workspace   	#232323 #232323 #c0c0c0
+		inactive_workspace 	#232323 #232323 #c0c0c0
+		urgent_workspace  	#f44336	#ffeb3b	#000000
+		statusline		#c0c0c0
+		background		#232323
+	}
+}
+
+### AUTOSTART THINGS ###
+
+#Set Background
+exec feh --bg-scale ~/Media/pictures/walls/archer.jpg
+#Merge .Xresources File
+exec xrdb -merge ~/.Xresources
+#Start URXVT as a daemon
+exec urxvtd -qfo
+#Turn off mousepad
+exec syndaemon -i .75 -dk
