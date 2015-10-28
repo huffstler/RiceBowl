@@ -1,0 +1,3 @@
+!#import different files for different programs
+
+#include ".Xresources.d/rxvt-unicode"

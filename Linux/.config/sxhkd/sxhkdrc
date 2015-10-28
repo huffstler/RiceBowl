@@ -1,0 +1,39 @@
+#config file for SXHKD
+#Pat Hough
+
+#For neatness and future sanity, set up modes of editing, where in a certain mode, certain keys will do certain things
+# ie, in window mode, up, left, right, and down keys move the focus to windows in those directions
+# in movement mode, left, up, down, right move the current window in that direction
+# in screen mode, left and right decrease and increase volume, while up and down increase and decrease screen brightness.
+# other modes based upon future needs.
+
+#Window Mode
+	#move focus left
+	#move focus right
+	#move focus up
+	#move focus down
+
+#Movement Mode
+	#move window left
+	#move window right
+	#move window up
+	#move window down
+	#make window scratchpad
+	#toggle scratchpad
+
+#Screen Mode
+
+	#Volume
+		#increase volume
+		#decrease volume
+		#toggle mute
+
+	#Brightness
+		#increase brightness
+		#decrease brightness
+
+#Hotkey Mode
+
+	#Reloading Config Files
+
+	#ScreenShot

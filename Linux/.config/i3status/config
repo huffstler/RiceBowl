@@ -1,0 +1,51 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 1
+}
+
+order += "disk /home"
+order += "disk /"
+order += "volume master"
+order += "battery 0"
+order += "tztime Newark"
+order += "wireless wlp2s0"
+
+wireless wlp2s0 {
+        format_up = "(On)"
+        format_down = "(Off)"
+}
+
+battery 0 {
+        integer_battery_capacity = true
+	format = "Bat: %percentage"
+	low_threshold = 15	
+	threshold_type = percentage
+}
+
+tztime Newark {
+        format = "%I:%M %m/%d"
+	timezone = "UTC/Newark"
+}
+
+disk "/" {
+	format = "Root: %avail"	
+}
+
+disk "/home" {
+        format = "Home: %avail"
+}
+
+volume master {
+	format = "V: %volume"
+	device = "default"
+	mixer = "Master"
+	mixer_idx = 0
+}
