@@ -71,15 +71,14 @@ BlackboxBar.sendToSwitchTo: true
 
 # -------------------------
 # hidden icons (auto saved)
-BlackboxBar.tray.hidden.count: 8
-BlackboxBar.tray.hidden.1: "SystemTray_Main",1225
-BlackboxBar.tray.hidden.2: "Afx:0000000140000000:0",128
-BlackboxBar.tray.hidden.3: "NotificationIconWindowClass",0
-BlackboxBar.tray.hidden.4: "ytWindow",43582664
-BlackboxBar.tray.hidden.5: "RainmeterTrayClass",101
-BlackboxBar.tray.hidden.6: "SkyDrive Class Name {090B42FF-7B26-4416-99B6-CB17896CF07C}",501
-BlackboxBar.tray.hidden.7: "WindowsForms10.Window.0.app.0.34f5582_r41_ad1",1
-BlackboxBar.tray.hidden.8: "#32770",49397
+BlackboxBar.tray.hidden.count: 7
+BlackboxBar.tray.hidden.1: "Afx:0000000140000000:0",128
+BlackboxBar.tray.hidden.2: "NotificationIconWindowClass",0
+BlackboxBar.tray.hidden.3: "ytWindow",43582664
+BlackboxBar.tray.hidden.4: "RainmeterTrayClass",101
+BlackboxBar.tray.hidden.5: "SkyDrive Class Name {090B42FF-7B26-4416-99B6-CB17896CF07C}",501
+BlackboxBar.tray.hidden.6: "WindowsForms10.Window.0.app.0.34f5582_r41_ad1",1
+BlackboxBar.tray.hidden.7: "#32770",49397
 BlackboxBar.minHeight: 28
 BlackboxBar.clock.tips: false
 BlackboxBar.clock.Btn1Click: 
