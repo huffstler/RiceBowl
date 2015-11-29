@@ -28,12 +28,12 @@ BlackboxBar.item: Space
 # General Settings
 BlackboxBar.placement: TopCenter
 BlackboxBar.position.x: 192
-BlackboxBar.position.y: 0
+BlackboxBar.position.y: 25
 BlackboxBar.widthPercent: 100
 BlackboxBar.useSlit: false
 BlackboxBar.pluginToggle: true
 BlackboxBar.OnTop: true
-BlackboxBar.AutoHide: false
+BlackboxBar.AutoHide: true
 BlackboxBar.autoRaise: true
 BlackboxBar.snapToEdge: 0
 BlackboxBar.snapWindow: 0
@@ -71,15 +71,16 @@ BlackboxBar.sendToSwitchTo: true
 
 # -------------------------
 # hidden icons (auto saved)
-BlackboxBar.tray.hidden.count: 8
-BlackboxBar.tray.hidden.1: "NotificationIconWindowClass",0
-BlackboxBar.tray.hidden.2: "Afx:0000000140000000:0",128
-BlackboxBar.tray.hidden.3: "ytWindow",42468552
+BlackboxBar.tray.hidden.count: 9
+BlackboxBar.tray.hidden.1: "Afx:0000000140000000:0",128
+BlackboxBar.tray.hidden.2: "NotificationIconWindowClass",0
+BlackboxBar.tray.hidden.3: "ytWindow",42337480
 BlackboxBar.tray.hidden.4: "RainmeterTrayClass",101
 BlackboxBar.tray.hidden.5: "SkyDrive Class Name {090B42FF-7B26-4416-99B6-CB17896CF07C}",501
 BlackboxBar.tray.hidden.6: "WindowsForms10.Window.0.app.0.33c0d9d",1
-BlackboxBar.tray.hidden.7: "#32770",49363
-BlackboxBar.tray.hidden.8: "WindowsForms10.Window.0.app.0.34f5582_r41_ad1",1
+BlackboxBar.tray.hidden.7: "WindowsForms10.Window.0.app.0.34f5582_r41_ad1",1
+BlackboxBar.tray.hidden.8: "#32770",49397
+BlackboxBar.tray.hidden.9: "PlexMediaServer_TrayIconClass",103
 BlackboxBar.minHeight: 28
 BlackboxBar.clock.tips: false
 BlackboxBar.clock.Btn1Click: 
