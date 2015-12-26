@@ -1,0 +1,154 @@
+@namespace html url(http://www.w3.org/1999/xhtml);
+@namespace xul url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* Variables */
+
+:root {
+  /*Font*/ 
+  --font: Malgun Gothic; 
+  --font-size: 12px;
+
+  /*Colors*/
+  --bg: #607d8b;
+  --accent: #fff59d;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+/* Browser */
+@-moz-document url(chrome://browser/content/browser.xul) {
+  
+  /* Hide stuff */
+  
+  .tab-background-start,
+  .tab-background-end,
+  #PanelUI-button,
+  #back-button,
+  #forward-button,
+  #urlbar-reload-button,
+  #reader-mode-button,
+  #identity-box,
+  .tab-close-button.close-icon,
+  .tab-icon-image,
+  .autocomplete-history-dropmarker.urlbar-history-dropmarker,
+  .tabs-newtab-button,
+  .tab-icon-overlay {
+    display: none !important;
+  }
+  
+  /* Tabs */
+  
+  #TabsToolbar {
+    -moz-box-ordinal-group:10000 !important;
+    background: var(--bg) !important;
+  }
+  
+  .arrowscrollbox-scrollbox {
+    background: var(--bg) !important;
+  }
+  
+  tab {
+    font-family: var(--font) !important; 
+    font-size: var(--font-size) !important;
+    height: 22px !important;
+/*     font-weight: 60 !important; */
+    border: none !important;
+  }
+  
+  .tabbrowser-tab *, .tabs-newtab-button * {
+    background: none !important; 
+    list-style-image: none !important;
+    margin: 0 0 0 0 !important;
+    padding-left: 1px !important;
+    -moz-appearance: none !important;
+    border: none !important;
+ }
+  
+  .tabbrowser-tab[selected] {
+    background: var(--bg) !important;
+    color: var(--white) !important;
+    text-align: center !important;
+
+    border-bottom: solid 3px var(--accent) !important;
+  }
+  
+  .tabbrowser-tab:not([selected]) {
+    background: var(--bg) !important;
+    text-align: center !important;
+    color: var(--white) !important;
+
+  }
+  
+  #TabsToolbar, #tabbrowser-tabs {
+    margin-left: -2px !important;
+    margin-top: -1px !important;
+ }
+  
+ .tabbrowser-tab::before, .tabbrowser-tab::after { 
+   background: none !important;
+   opacity: 1 !important;
+   visibility: visible !important; 
+ }
+  
+  /* Navbar stuff */
+  
+  .scrollbox-innerbox {
+    background: var(--bg) !important;
+    color: var(--white) !important;
+  }
+  
+/*   #back-button > .toolbarbutton-icon {
+    background: #1c1c1c !important;
+    border-radius: 0 !important;
+    max-height: 24px !important;
+    margin-left: 0px !important;
+    transition: margin-left 0.2s !important;
+  } */
+  
+/*   #forward-button > .toolbarbutton-icon {
+    background-color: #1c1c1c !important;
+  } */
+  
+  #nav-bar-customization-target{
+    height: 60px !important;
+    background: var(--bg) !important;
+    border: none var(--white) !important;
+    margin-top: -2px !important;
+    margin-bottom: 0px !important;
+    padding-top: 7px !important;
+  }
+  
+/*   #nav-bar {
+    box-shadow: 0px 3px 10px #212121 !important;
+  } */
+  
+  #urlbar {
+    border: none !important;
+    border-radius: 2px !important;
+    margin-left: 125px !important;
+    margin-right: 125px !important;
+    margin-bottom: 5px !important;
+    background: var(--white) !important;
+    text-align: center !important;
+    color: var(--black) !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .searchbar-textbox{
+    background: var(--black) !important;
+    color: var(--black) !important;
+    margin-right: 7px !important;
+    transition: background 0.2s;
+
+  }
+  
+  .searchbar-textbox:hover, #urlbar:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+/*     transition: box-shadow 0.4s; */
+  }
+  
+  ::-moz-placeholder {
+    opacity: 0 !important;
+  }
+}
