@@ -22,7 +22,7 @@ body {
 		background-color: white;
 		color: #333;
 		font-size: 15px;
-		font-family: 'Malgun Gothic', sans-serif;
+		font-family: 'Malgun Gothic';
 		display: block;
 		margin: auto;
 		margin-top: 50px;
@@ -39,15 +39,6 @@ body {
 		top: 25%;
 		left:16%;
 		right:11%;
-	}
-	
-	#footer {
-		position: absolute;
-		bottom : 0;
-		right: 0;
-		text-align: right;
-		padding: 10px;
-		font-size:30%;
 	}
 	
 	#linkblock {

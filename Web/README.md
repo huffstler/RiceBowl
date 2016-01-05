@@ -6,4 +6,4 @@ TODO:
 
 ----
   
-  *Hide the "Close, Minimize and Window" buttons in the top right
+ALL DONE
