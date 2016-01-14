@@ -1,19 +1,19 @@
 body { 
 		background-color:#eceff1;
-		color:#ffffff;
 	}
 	
-	#Title {
-		font-family: 'Malgun Gothic';
+	#title {
+		font-family: 'Bangers', cursive;
+		font-size: 50;
 		text-align: center;
 		color: #333;
-		margin-top: 75px;
+		margin-top: 50px;
 	}
 	
 	#searchbox{
 
 		width: 500;
-		height: 4%;
+		height: 2.5em;
 		border: none;
 		border-radius: 2px;
 		outline: none;
@@ -21,8 +21,8 @@ body {
 		text-align: left;
 		background-color: white;
 		color: #333;
-		font-size: 15px;
-		font-family: 'Malgun Gothic';
+		font-size: 16px;
+		font-family: 'Corbel';
 		display: block;
 		margin: auto;
 		margin-top: 50px;
