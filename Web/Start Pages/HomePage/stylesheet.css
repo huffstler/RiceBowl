@@ -1,16 +1,21 @@
 body{
 	
 	background-color: #eceff1; /*Make this the same color as the footer text */
-	padding: 5%;
-	
-	
+
 }
 
-#rss{
-	
-	text-align: left;
+#rss{	
+	float: right;
+	position: fixed;
+	top: 0;
+	right: 0;
 	color: transparent;
-	
+	background: white;	
+	height: 100vh;
+	width: 20vw;
+	padding-left: 10px;
+	padding right: 10px;
+	text-align: center;
 }
 
 #searchbox{
@@ -25,7 +30,7 @@ body{
 	padding-right: 10px;
 	color: #333;
 	font-size: 15px;
-	font-family: 'Malgun Gothic';
+	font-family: 'Times New Roman';
 	
 }
 

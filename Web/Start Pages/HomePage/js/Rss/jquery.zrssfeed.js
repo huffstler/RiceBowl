@@ -31,7 +31,7 @@
 	
 		// Set plugin defaults
 		var defaults = {
-			limit: 10,
+			limit: 20,
 			offset: 1,
 			header: false,
 			titletag: 'h5',

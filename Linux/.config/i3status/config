@@ -32,7 +32,7 @@ battery 0 {
 
 tztime Newark {
         format = "%I:%M %m/%d"
-	timezone = "UTC/Newark"
+	timezone = "America/New_York"
 }
 
 disk "/" {
