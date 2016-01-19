@@ -1,54 +1,87 @@
-body{
-	
-	background-color: #eceff1; /*Make this the same color as the footer text */
-
+:root {
+	--baseclr: #607d8b;
+	--accnt: #FF9800;
 }
 
-#rss{	
+body{
+
+	margin: 0;
+
+	background-color: #eceff1; /*Make this the same color as the footer text */
+		/*#eceff1;*/
+}
+
+#rss{
+
+	display: block;
 	float: right;
-	position: fixed;
+	position: relative;
 	top: 0;
 	right: 0;
-	color: transparent;
-	background: white;	
-	height: 100vh;
+	height: 100%;
 	width: 20vw;
 	padding-left: 10px;
 	padding right: 10px;
+	z-index: 5;
+
 	text-align: center;
+
+	box-shadow: -3px 0px 6px rgba(0,0,0,0.16), -3px 0px 6px rgba(0,0,0,0.23); /* h/v/b/clr */
+	transition: all 0.2s ease-in-out;
+	color: transparent;
+	background: var(--baseclr);
+
+}
+.rssRow a{
+	color: white;
+	text-decoration: none;
+	font-family: 'Liberation Sans';
+	font-weight: normal;
+}
+.rssRow a:visited{
+	color: var(--accnt);
+}
+#rss:hover {
+	box-shadow: -19px 0px 38px rgba(0,0,0,0.30), -15px 0px 12px rgba(0,0,0,0.22);
 }
 
 #searchbox{
-
-	width: 35%;
-	height:32px;
-	border:none;
+	position: fixed;
+	left: 12.5%;
+	top: 150px;
+	width: 50%;
+	height:36px;
+	border: 2px solid #555;
 	border-radius: 2px;
 	outline: none;
 	text-align: left;
-	padding-left: 10px;	
+	padding-left: 10px;
 	padding-right: 10px;
+
+	font-size: 1.2em;
+	font-family: 'Corbel';
+
 	color: #333;
-	font-size: 15px;
-	font-family: 'Times New Roman';
-	
+	background-color: white;
 }
 
-	
+
 #weather{
-	
-	position: center;
+
+	position: fixed;
+	width: 50%;
+	left: 13.5%;
 	font-size: 1em;
-	
+
 }
 
-#currentWeather {
+/*#currentWeather {
 	display: block;
 	float: left;
 	text-align: center;
-}
+}*/
 
-.weatherForecastText, .weatherForecastDate{
+#currentWeather, .weatherForecastText, .weatherForecastDate{
 	display: none;
 }
 
@@ -62,7 +95,19 @@ body{
 	float: left;
 	padding-right: 2.5%;
 	padding-left: 2.5%;
-	width: 10%;
+	width: 15%;
 	background-image: none;
 	text-align: center;
+	font-size: .85em;
+}
+
+#links {
+	position: fixed;
+	left: 2%;
+	top: 25%;
+	width: 75%;
+	height: 67%;
+
+	background-color: black;
+
 }

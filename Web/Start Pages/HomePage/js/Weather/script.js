@@ -9,7 +9,7 @@ $(document).ready(function() {
         $(this).toggleClass('hovered');
     });
 	/*Put in zip code or weather.com code(if you're not in US)*/
-	$('#weather').weatherfeed(['19711'], {
+	$('#weather').weatherfeed(['19717'], {
 		unit: 'f',
 		forecast: true,
 		wind: false,

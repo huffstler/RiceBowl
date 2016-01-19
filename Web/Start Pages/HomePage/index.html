@@ -8,7 +8,8 @@
 
 <body>
 		<div id="weather"></div>
-		<input id="searchbox" placeholder="Options: | -a | -h | -m | -w | -y |" type="text" autofocus="true"  autocomplete="true"></input>
+		<input id="searchbox" placeholder="Options: | -a | -h | -m | -w | -y |" type="text" autofocus="true"></input>
+		<div id='links'></div>
 		<div id="rss"></div>
 </body>
 
@@ -22,11 +23,10 @@
 <script type="text/javascript">
 $(document).ready( function () {
 	$('#rss').rssfeed('http://www.rssmix.com/u/8162719/rss.xml', {
-		limit: 10
+		limit: 50
 	});
 });
 
 </script>
 
-</html> 
-
+</html>
