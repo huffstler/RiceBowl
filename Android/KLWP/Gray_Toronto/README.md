@@ -1,3 +1,3 @@
 #Gray Toronto
 
-I'll get a scrot up soon. Have to finish getting everything else set up first.
+![Gray Toronto](http://puu.sh/pU38X/7f12bf9c89.png)

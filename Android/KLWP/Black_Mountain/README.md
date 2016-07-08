@@ -1,2 +1,2 @@
 #Black Mountain
-No Scrots for this one, sorry.
+No scrots for this one, sorry.
