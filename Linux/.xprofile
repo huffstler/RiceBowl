@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+#This is so I only have to manage xinitrc
+
+eval "$(cat .xinitrc)"
