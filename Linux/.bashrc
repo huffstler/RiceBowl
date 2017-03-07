@@ -11,6 +11,8 @@ alias showall='pacman -Q'
 alias ccache='sudo pacman -Sc'
 # End Arch specific aliases #
 
+#Test line
+
 alias ls='ls --color=auto'
 alias lh='ls -d .*'
 alias la='ls -a'
