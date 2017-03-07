@@ -1,0 +1,60 @@
+#config file for SXHKD
+#Pat Hough
+
+# For neatness and future sanity, set up modes of editing, where in a certain mode, certain keys will do certain things
+# ie, in window mode, up, left, right, and down keys move the focus to windows in those directions
+# in movement mode, left, up, down, right move the current window in that direction
+# in screen mode, left and right decrease and increase volume, while up and down increase and decrease screen brightness.
+# other modes based upon future needs.
+
+#General Action Launching
+alt + space
+	rofi -show run
+
+alt + shift + space
+	i3-msg floating toggle
+
+alt + Return 
+	exec termite 
+
+#move focus left
+#move focus right
+#move focus up
+#move focus down
+
+#move window left
+#move window right
+#move window up
+#move window down
+
+#make window scratchpad
+alt + shift + o
+	i3-msg move scratchpad
+
+#toggle scratchpad
+alt + o
+	i3-msg scratchpad show
+
+#Kill current window
+ctrl + k
+	i3-msg kill
+
+#increase volume
+XF86AudioRaiseVolume
+	pactl set-sink-volume 0 +5%	
+
+#decrease volume
+XF86AudioLowerVolume
+	pactl set-sink-volume 0 -5%
+
+#increase brightness
+super + up
+	xbacklight -inc 5
+
+#decrease brightness
+super + down
+	xbacklight -dec 5
+
+#ScreenShot
+Print
+	scrot -d 1 -e 'mv $f ~/media/pictures/scrots/'
