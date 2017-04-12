@@ -1,0 +1,563 @@
+<TaskerData sr="" dvi="1" tv="4.9u4m">
+	<Profile sr="prof13" ve="2">
+		<cdate>1484284346647</cdate>
+		<edate>1489033002909</edate>
+		<flags>2</flags>
+		<id>13</id>
+		<mid0>14</mid0>
+		<nme>Brightness Shake</nme>
+		<Event sr="con0" ve="2">
+			<code>3001</code>
+			<pri>0</pri>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="2"/>
+			<Int sr="arg2" val="2"/>
+		</Event>
+	</Profile>
+	<Profile sr="prof15" ve="2">
+		<cdate>1489026877845</cdate>
+		<edate>1491772407724</edate>
+		<flags>2</flags>
+		<id>15</id>
+		<mid0>17</mid0>
+		<nme>Auto Monitor Sleep</nme>
+		<Event sr="con0" ve="2">
+			<code>801067335</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>Bedtime</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<com.urbandroid.sleep.taskerplugin.extra.EVENT>com.urbandroid.sleep.alarmclock.TIME_TO_BED_ALARM_ALERT</com.urbandroid.sleep.taskerplugin.extra.EVENT>
+					<com.urbandroid.sleep.taskerplugin.extra.EVENT-type>java.lang.String</com.urbandroid.sleep.taskerplugin.extra.EVENT-type>
+					<com.urbandroid.sleep.taskerplugin.extra.INT_VERSION_CODE>1488</com.urbandroid.sleep.taskerplugin.extra.INT_VERSION_CODE>
+					<com.urbandroid.sleep.taskerplugin.extra.INT_VERSION_CODE-type>java.lang.Integer</com.urbandroid.sleep.taskerplugin.extra.INT_VERSION_CODE-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.urbandroid.sleep</Str>
+			<Str sr="arg2" ve="3">com.urbandroid.sleep.addon.taskerplugin.ui.EditEventActivity</Str>
+		</Event>
+	</Profile>
+	<Profile sr="prof2" ve="2">
+		<cdate>1489024192703</cdate>
+		<edate>1489024205442</edate>
+		<flags>2</flags>
+		<id>2</id>
+		<mid0>3</mid0>
+		<Time sr="con0">
+			<fh>3</fh>
+			<fm>0</fm>
+			<th>3</th>
+			<tm>0</tm>
+		</Time>
+	</Profile>
+	<Profile sr="prof20" ve="2">
+		<cdate>1489029635873</cdate>
+		<edate>1489029683762</edate>
+		<flags>2</flags>
+		<id>20</id>
+		<mid0>18</mid0>
+		<mid1>19</mid1>
+		<nme>Sleepy Time</nme>
+		<Time sr="con0">
+			<fh>22</fh>
+			<fm>45</fm>
+			<th>7</th>
+			<tm>0</tm>
+		</Time>
+	</Profile>
+	<Profile sr="prof22" ve="2">
+		<cdate>1489031321422</cdate>
+		<edate>1489031966267</edate>
+		<flags>2</flags>
+		<id>22</id>
+		<mid0>24</mid0>
+		<mid1>23</mid1>
+		<nme>Auto Gps</nme>
+		<App sr="con0" ve="2">
+			<cls0>com.google.android.maps.MapsActivity</cls0>
+			<cls1>com.google.android.gms.car.CarHomeActivity1</cls1>
+			<cls2>com.samruston.weather.MainActivity</cls2>
+			<flags>2</flags>
+			<label0>Maps</label0>
+			<label1>Android Auto</label1>
+			<label2>Weather Timeline</label2>
+			<pkg0>com.google.android.apps.maps</pkg0>
+			<pkg1>com.google.android.gms</pkg1>
+			<pkg2>com.samruston.weather</pkg2>
+		</App>
+	</Profile>
+	<Profile sr="prof4" ve="2">
+		<cdate>1484281149434</cdate>
+		<edate>1489029329188</edate>
+		<flags>2</flags>
+		<id>4</id>
+		<mid0>6</mid0>
+		<Time sr="con0">
+			<fh>7</fh>
+			<fm>0</fm>
+			<th>7</th>
+			<tm>0</tm>
+		</Time>
+	</Profile>
+	<Profile sr="prof5" ve="2">
+		<cdate>1489024370861</cdate>
+		<edate>1491772457569</edate>
+		<flags>2</flags>
+		<id>5</id>
+		<mid0>11</mid0>
+		<mid1>16</mid1>
+		<nme>Unlocked @ Home</nme>
+		<State sr="con0" ve="2">
+			<code>160</code>
+			<Str sr="arg0" ve="3">HOME-8D12</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+		</State>
+	</Profile>
+	<Profile sr="prof9" ve="2">
+		<cdate>1484281819232</cdate>
+		<edate>1489032071923</edate>
+		<flags>2</flags>
+		<id>9</id>
+		<mid0>10</mid0>
+		<mid1>12</mid1>
+		<nme>Auto rotate Toggle</nme>
+		<App sr="con0" ve="2">
+			<cls0>com.google.android.apps.photos.home.HomeActivity</cls0>
+			<cls1>com.snapchat.android.LandingPageActivity</cls1>
+			<cls10>com.google.android.apps.docs.app.NewMainProxyActivity</cls10>
+			<cls2>com.google.android.youtube.app.honeycomb.Shell$HomeActivity</cls2>
+			<cls3>com.sec.android.gallery3d.app.Gallery</cls3>
+			<cls4>com.mxtech.videoplayer.ad.ActivityMediaList</cls4>
+			<cls5>com.netflix.mediaclient.ui.launch.UIWebViewActivity</cls5>
+			<cls6>com.sec.android.app.camera.Camera</cls6>
+			<cls7>com.sec.android.app.popupcalculator.Calculator</cls7>
+			<cls8>com.amaze.filemanager.activities.MainActivity</cls8>
+			<cls9>com.android.calendar.AllInOneActivity</cls9>
+			<flags>2</flags>
+			<label0>Photos</label0>
+			<label1>Snapchat</label1>
+			<label10>Drive</label10>
+			<label2>YouTube</label2>
+			<label3>Gallery</label3>
+			<label4>MX Player</label4>
+			<label5>Netflix</label5>
+			<label6>Camera</label6>
+			<label7>Calculator</label7>
+			<label8>Amaze</label8>
+			<label9>Calendar</label9>
+			<pkg0>com.google.android.apps.photos</pkg0>
+			<pkg1>com.snapchat.android</pkg1>
+			<pkg10>com.google.android.apps.docs</pkg10>
+			<pkg2>com.google.android.youtube</pkg2>
+			<pkg3>com.sec.android.gallery3d</pkg3>
+			<pkg4>com.mxtech.videoplayer.ad</pkg4>
+			<pkg5>com.netflix.mediaclient</pkg5>
+			<pkg6>com.sec.android.app.camera</pkg6>
+			<pkg7>com.sec.android.app.popupcalculator</pkg7>
+			<pkg8>com.amaze.filemanager</pkg8>
+			<pkg9>com.google.android.calendar</pkg9>
+		</App>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1465748681078</cdate>
+		<mdate>1489033850744</mdate>
+		<name>Base</name>
+		<pids>2,4,9,15,22,5,20,13</pids>
+		<tids>6,10,12,14,3,11,16,17,18,19,23,24</tids>
+		<Img sr="icon" ve="2">
+			<nme>hl_aaa_ext_home</nme>
+		</Img>
+	</Project>
+	<Task sr="task10">
+		<cdate>1484281830076</cdate>
+		<edate>1487522761866</edate>
+		<id>10</id>
+		<nme>Auto rotate ON</nme>
+		<Action sr="act0" ve="7">
+			<code>822</code>
+			<Int sr="arg0" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task11">
+		<cdate>1489024381777</cdate>
+		<edate>1491772416396</edate>
+		<id>11</id>
+		<nme>Lock Off</nme>
+		<Action sr="act0" ve="7">
+			<code>1563799945</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.intangibleobject.securesettings.plugin.extra.BLURB>Clear Password</com.intangibleobject.securesettings.plugin.extra.BLURB>
+					<com.intangibleobject.securesettings.plugin.extra.BLURB-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.BLURB-type>
+					<com.intangibleobject.securesettings.plugin.extra.ENABLED>false</com.intangibleobject.securesettings.plugin.extra.ENABLED>
+					<com.intangibleobject.securesettings.plugin.extra.ENABLED-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.ENABLED-type>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING>password_reset</com.intangibleobject.securesettings.plugin.extra.SETTING>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.SETTING-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Clear Password</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
+			<Str sr="arg2" ve="3">com.intangibleobject.securesettings.plugin.Activities.TabsActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>1563799945</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.intangibleobject.securesettings.plugin.extra.BLURB>Keyguard Disabled/BG</com.intangibleobject.securesettings.plugin.extra.BLURB>
+					<com.intangibleobject.securesettings.plugin.extra.BLURB-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.BLURB-type>
+					<com.intangibleobject.securesettings.plugin.extra.ENABLED>false</com.intangibleobject.securesettings.plugin.extra.ENABLED>
+					<com.intangibleobject.securesettings.plugin.extra.ENABLED-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.ENABLED-type>
+					<com.intangibleobject.securesettings.plugin.extra.RUN_IN_BG>true</com.intangibleobject.securesettings.plugin.extra.RUN_IN_BG>
+					<com.intangibleobject.securesettings.plugin.extra.RUN_IN_BG-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.RUN_IN_BG-type>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING>keyguard</com.intangibleobject.securesettings.plugin.extra.SETTING>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.SETTING-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Keyguard Disabled/BG</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
+			<Str sr="arg2" ve="3">com.intangibleobject.securesettings.plugin.Activities.TabsActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task12">
+		<cdate>1484282011568</cdate>
+		<edate>1489024121192</edate>
+		<id>12</id>
+		<nme>Auto rotate OFF</nme>
+		<Action sr="act0" ve="7">
+			<code>822</code>
+			<Int sr="arg0" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task14">
+		<cdate>1484284360678</cdate>
+		<edate>1484314485498</edate>
+		<id>14</id>
+		<nme>Full Brightness</nme>
+		<pri>100</pri>
+		<rty>1</rty>
+		<Action sr="act0" ve="7">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%Shake</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="2"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%CURRBRIGHT</Str>
+			<Str sr="arg1" ve="3">%BRIGHT</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Shake</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>810</code>
+			<Int sr="arg0" val="255"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Shake</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>810</code>
+			<Int sr="arg0">
+				<var>%CurrBright</var>
+			</Int>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Shake</lhs>
+					<op>2</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task16">
+		<cdate>1489024665852</cdate>
+		<edate>1491772457569</edate>
+		<id>16</id>
+		<nme>Lock On</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>1563799945</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.intangibleobject.securesettings.plugin.extra.BLURB>Set Pin</com.intangibleobject.securesettings.plugin.extra.BLURB>
+					<com.intangibleobject.securesettings.plugin.extra.BLURB-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.BLURB-type>
+					<com.intangibleobject.securesettings.plugin.extra.ENABLED>true</com.intangibleobject.securesettings.plugin.extra.ENABLED>
+					<com.intangibleobject.securesettings.plugin.extra.ENABLED-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.ENABLED-type>
+					<com.intangibleobject.securesettings.plugin.extra.NEW_PASSWORD>b+z+AqVRKsQ=]3rACm0IjfkSQiw/3c9pvlQ==]lZyEgGGU75xOlhFg8iuyUg==</com.intangibleobject.securesettings.plugin.extra.NEW_PASSWORD>
+					<com.intangibleobject.securesettings.plugin.extra.NEW_PASSWORD-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.NEW_PASSWORD-type>
+					<com.intangibleobject.securesettings.plugin.extra.PASSWORD_TYPE>pin</com.intangibleobject.securesettings.plugin.extra.PASSWORD_TYPE>
+					<com.intangibleobject.securesettings.plugin.extra.PASSWORD_TYPE-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.PASSWORD_TYPE-type>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING>password_reset</com.intangibleobject.securesettings.plugin.extra.SETTING>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.SETTING-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Set Pin</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
+			<Str sr="arg2" ve="3">com.intangibleobject.securesettings.plugin.Activities.TabsActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>1563799945</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.intangibleobject.securesettings.plugin.extra.BLURB>Keyguard Enabled</com.intangibleobject.securesettings.plugin.extra.BLURB>
+					<com.intangibleobject.securesettings.plugin.extra.BLURB-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.BLURB-type>
+					<com.intangibleobject.securesettings.plugin.extra.ENABLED>true</com.intangibleobject.securesettings.plugin.extra.ENABLED>
+					<com.intangibleobject.securesettings.plugin.extra.ENABLED-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.ENABLED-type>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING>keyguard</com.intangibleobject.securesettings.plugin.extra.SETTING>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.SETTING-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Keyguard Enabled</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
+			<Str sr="arg2" ve="3">com.intangibleobject.securesettings.plugin.Activities.TabsActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task17">
+		<cdate>1489026887772</cdate>
+		<edate>1489029448177</edate>
+		<id>17</id>
+		<nme>Auto Sleep Tracking</nme>
+		<Action sr="act0" ve="7">
+			<code>90406179</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>Start sleep tracking</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<com.urbandroid.sleep.taskerplugin.extra.EVENT>com.urbandroid.sleep.alarmclock.START_SLEEP_TRACK</com.urbandroid.sleep.taskerplugin.extra.EVENT>
+					<com.urbandroid.sleep.taskerplugin.extra.EVENT-type>java.lang.String</com.urbandroid.sleep.taskerplugin.extra.EVENT-type>
+					<com.urbandroid.sleep.taskerplugin.extra.INT_VERSION_CODE>1488</com.urbandroid.sleep.taskerplugin.extra.INT_VERSION_CODE>
+					<com.urbandroid.sleep.taskerplugin.extra.INT_VERSION_CODE-type>java.lang.Integer</com.urbandroid.sleep.taskerplugin.extra.INT_VERSION_CODE-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.urbandroid.sleep</Str>
+			<Str sr="arg2" ve="3">com.urbandroid.sleep.addon.taskerplugin.ui.EditActionActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task18">
+		<cdate>1489029475023</cdate>
+		<edate>1489029537781</edate>
+		<id>18</id>
+		<nme>Silent Time</nme>
+		<Action sr="act0" ve="7">
+			<code>307</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>305</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>304</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>308</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>303</code>
+			<Int sr="arg0" val="7"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task19">
+		<cdate>1489029553986</cdate>
+		<edate>1489029596097</edate>
+		<id>19</id>
+		<nme>Revert Volume</nme>
+		<Action sr="act0" ve="7">
+			<code>308</code>
+			<Int sr="arg0" val="7"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>305</code>
+			<Int sr="arg0" val="7"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>307</code>
+			<Int sr="arg0" val="7"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>303</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task23">
+		<cdate>1489031332556</cdate>
+		<edate>1489031966267</edate>
+		<id>23</id>
+		<nme>Gps Off</nme>
+		<Action sr="act0" ve="7">
+			<code>1563799945</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.intangibleobject.securesettings.plugin.extra.BLURB>Location Mode/Battery Saving</com.intangibleobject.securesettings.plugin.extra.BLURB>
+					<com.intangibleobject.securesettings.plugin.extra.BLURB-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.BLURB-type>
+					<com.intangibleobject.securesettings.plugin.extra.EXTRA_SPINNER_OPTION>2</com.intangibleobject.securesettings.plugin.extra.EXTRA_SPINNER_OPTION>
+					<com.intangibleobject.securesettings.plugin.extra.EXTRA_SPINNER_OPTION-type>java.lang.Integer</com.intangibleobject.securesettings.plugin.extra.EXTRA_SPINNER_OPTION-type>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING>location_mode</com.intangibleobject.securesettings.plugin.extra.SETTING>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.SETTING-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Location Mode/Battery Saving</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
+			<Str sr="arg2" ve="3">com.intangibleobject.securesettings.plugin.Activities.TabsActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>1563799945</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.intangibleobject.securesettings.plugin.extra.BLURB>GPS Disabled</com.intangibleobject.securesettings.plugin.extra.BLURB>
+					<com.intangibleobject.securesettings.plugin.extra.BLURB-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.BLURB-type>
+					<com.intangibleobject.securesettings.plugin.extra.ENABLED>false</com.intangibleobject.securesettings.plugin.extra.ENABLED>
+					<com.intangibleobject.securesettings.plugin.extra.ENABLED-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.ENABLED-type>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING>gps</com.intangibleobject.securesettings.plugin.extra.SETTING>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.SETTING-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>GPS Disabled</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
+			<Str sr="arg2" ve="3">com.intangibleobject.securesettings.plugin.Activities.TabsActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task24">
+		<cdate>1489031375734</cdate>
+		<edate>1489031962230</edate>
+		<id>24</id>
+		<nme>Gps On</nme>
+		<Action sr="act0" ve="7">
+			<code>1563799945</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.intangibleobject.securesettings.plugin.extra.BLURB>GPS Enabled</com.intangibleobject.securesettings.plugin.extra.BLURB>
+					<com.intangibleobject.securesettings.plugin.extra.BLURB-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.BLURB-type>
+					<com.intangibleobject.securesettings.plugin.extra.ENABLED>true</com.intangibleobject.securesettings.plugin.extra.ENABLED>
+					<com.intangibleobject.securesettings.plugin.extra.ENABLED-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.ENABLED-type>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING>gps</com.intangibleobject.securesettings.plugin.extra.SETTING>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.SETTING-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>GPS Enabled</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
+			<Str sr="arg2" ve="3">com.intangibleobject.securesettings.plugin.Activities.TabsActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>1563799945</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.intangibleobject.securesettings.plugin.extra.BLURB>Location Mode/High Accuracy</com.intangibleobject.securesettings.plugin.extra.BLURB>
+					<com.intangibleobject.securesettings.plugin.extra.BLURB-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.BLURB-type>
+					<com.intangibleobject.securesettings.plugin.extra.EXTRA_SPINNER_OPTION>3</com.intangibleobject.securesettings.plugin.extra.EXTRA_SPINNER_OPTION>
+					<com.intangibleobject.securesettings.plugin.extra.EXTRA_SPINNER_OPTION-type>java.lang.Integer</com.intangibleobject.securesettings.plugin.extra.EXTRA_SPINNER_OPTION-type>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING>location_mode</com.intangibleobject.securesettings.plugin.extra.SETTING>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.SETTING-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Location Mode/High Accuracy</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
+			<Str sr="arg2" ve="3">com.intangibleobject.securesettings.plugin.Activities.TabsActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task3">
+		<cdate>1489024197698</cdate>
+		<edate>1489024205442</edate>
+		<id>3</id>
+		<nme>Reboot</nme>
+		<Action sr="act0" ve="7">
+			<code>59</code>
+			<Int sr="arg0" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task6">
+		<cdate>1484281161870</cdate>
+		<edate>1489029375388</edate>
+		<id>6</id>
+		<nme>Open Weather</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>20</code>
+			<App sr="arg0">
+				<appClass>com.samruston.weather.MainActivity</appClass>
+				<appPkg>com.samruston.weather</appPkg>
+				<label>Weather Timeline</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
