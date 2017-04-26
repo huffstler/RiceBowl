@@ -74,27 +74,22 @@ WD_WindowTransparency := 120	; ( 1 - 255 )
 	Script
 */
 
-
 ;. Autoexecute section
 #NoEnv
 #SingleInstance, force
 
 SetWinDelay, 2
-
 CoordMode, Mouse
 
 ;. constants
 WD_ZONES_W := A_ScreenWidth // 3
 WD_ZONES_H := A_ScreenHeight // 3
 
-
-
-;. Analize settings
+; Analyze settings
 WD_Actions := [ WD_ActionsLeftEdge, WD_ActionsTopEdge, WD_ActionsRightEdge, WD_ActionsBottomEdge ]
 
 WD_WindowZoneXCount := ( WD_WindowZoneXCount < 3 ) ? 3 : ( WD_WindowZoneXCount > 10 ) ? 10 : WD_WindowZoneXCount
 WD_WindowZoneYCount := ( WD_WindowZoneYCount < 3 ) ? 3 : ( WD_WindowZoneYCount > 10 ) ? 10 : WD_WindowZoneYCount
-
 
 ;Invisible Gui with border
 Gui 2:  +ToolWindow +Alwaysontop +resize -border ;-0xC00000 ;+0x400000 ;  +0x40000000 +0x40000
@@ -104,17 +99,13 @@ Gui 2: show, x5000 w1 h1 , GuiOutline ;show off the Screen, then hide
 WinGet, GuiOutline, id, GuiOutline
 WinSet, Transparent, %WD_WindowTransparency%, ahk_id %GuiOutline%
 WinHide, ahk_id %GuiOutline%
-
-
 return
 
-
-;. Label that runs the timer. Everything starts here
+; Label that runs the timer. Everything starts here
 !LButton::
 	MouseGetPos, WD_MouseX, WD_MouseY, WD_id 	;. Get the initial mouse position and window id
 	settimer, WD_Check, 100						; Start timer that checks if there was movement
 return 
-
 
 ;. Timer: If mouse is not moving do not do anything
 WD_Check: 
@@ -333,8 +324,7 @@ return
 
 
 ; Returns -1, 0 or 1 depending on mouse and window position.
-WD_GetZoneNum( MousePos, WindowPos = 0, WindowSize = 0, Margin = 0 )
-{
+WD_GetZoneNum( MousePos, WindowPos = 0, WindowSize = 0, Margin = 0 ) {
 	if ( MousePos < WindowPos + Margin )
 		return -1
 	else if ( MousePos > WindowPos + WindowSize - Margin )
@@ -348,20 +338,18 @@ WD_GetZoneNum( MousePos, WindowPos = 0, WindowSize = 0, Margin = 0 )
 ;  2
 ; 1 3
 ;  4
-GetEdgeNumber( MouseX, MouseY )
-{
+GetEdgeNumber( MouseX, MouseY ) {
 	; Function searches for the lowest distans
-	Deltas := [MouseX
-			 , MouseY
-			 , A_ScreenWidth - MouseX
-			 , A_ScreenHeight - MouseY]
+	Deltas := [MouseX ,
+               MouseY ,
+			   A_ScreenWidth - MouseX ,
+			   A_ScreenHeight - MouseY
+              ]
 				
 	Edge := 1
 
-	Loop, 4
-	{
-		if Deltas[1] > Deltas[A_Index]
-		{
+	Loop, 4 {
+		if Deltas[1] > Deltas[A_Index] {
 			Deltas[1] := Deltas[A_Index]
 			Edge := A_Index
 		}
