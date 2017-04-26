@@ -3,6 +3,9 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+    WinSet, Transparent, 150, ahk_class Shell_TrayWnd
+    return
+
     ^+NumpadSub::
         run, "%comspec%" /c powercfg.exe /S a1841308-3541-4fab-bc81-f71556f20b4a,, Hide
         MsgBox, "Power Mode changed to Battery Saver"
@@ -28,5 +31,5 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ;Adds the title bars back
     #s::
-      WinSet, Style, +0xc00000, A
+      WinSet, Style, +0xC00000, A
     return
