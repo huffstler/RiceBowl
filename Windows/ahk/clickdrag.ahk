@@ -340,11 +340,10 @@ WD_GetZoneNum( MousePos, WindowPos = 0, WindowSize = 0, Margin = 0 ) {
 ;  4
 GetEdgeNumber( MouseX, MouseY ) {
 	; Function searches for the lowest distans
-	Deltas := [MouseX ,
-               MouseY ,
-			   A_ScreenWidth - MouseX ,
-			   A_ScreenHeight - MouseY
-              ]
+	Deltas := [MouseX
+             , MouseY
+			 , A_ScreenWidth - MouseX
+			 , A_ScreenHeight - MouseY]
 				
 	Edge := 1
 
