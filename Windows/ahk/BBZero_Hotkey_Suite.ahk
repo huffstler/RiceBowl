@@ -4,19 +4,16 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-; Sets taskbar to transparent, but then all icons on taskbar as transparent as well. So it doesn't work for my usecase
-; WinSet, Transparent, 150, ahk_class Shell_TrayWnd
-
 ; Adds easier hotkeys for Windows Task switching. MSI Laptop places windows key only on right side :(
 
-    ; Control + Shift + Tab shows workspace screen
-    ^Tab::SendEvent, #{Tab}
+; Control + Shift + Tab shows workspace screen
+^Tab::SendEvent, #{Tab}
 
-    ; Control + Alt + Left switches to left workspace
-    ^!Left::SendEvent, #^{Left}
+; Control + Alt + Left switches to left workspace
+^!Left::SendEvent, #^{Left}
 
-    ; Control + Alt + Right switches to right workspace
-    ^!Right::SendEvent, #^{Right}
+; Control + Alt + Right switches to right workspace
+^!Right::SendEvent, #^{Right}
 
     ; Exit script to reload if need be
     #^x::
@@ -26,8 +23,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
     ; Alternatively reload the script if changes have been made
     #^r::
-        Reload
         MsgBox, Reloaded Script
+        Reload
     return
     
 ; Changes laptop battery mode to Battery Saver
@@ -53,12 +50,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
     return
 
 ;Removes title bars from windows.
-    #h::
-      WinSet, Style, -0xc00000, A
-    return
+;    #h::
+;      WinSet, Style, -0xc00000, A
+;    return
 
 ;Adds the title bars back
-    #s::
-      WinSet, Style, +0xC00000, A
-    return
+;    #s::
+;      WinSet, Style, +0xC00000, A
+;    return
 
