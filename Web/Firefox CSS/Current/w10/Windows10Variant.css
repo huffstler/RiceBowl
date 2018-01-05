@@ -8,6 +8,10 @@
 #forward-button,
 #identity-icon,
 #identity-box,
+#titlebar-close, 
+#titlebar-min, 
+#titlebar-max,
+#PanelUI-button,
 .bookmark-item .toolbarbutton-icon,
 .tab-close-button,
 .urlbar-history-dropmarker,
@@ -25,68 +29,65 @@
 :root {
 	--accent: #77dd77;
 	--darkaccent: #33aa33;
-	--bg: #222222;
-	--fg: #333333;
+	--bgnd: #222;
+	--fgnd: #333;
 	--tabheight: 4vh;
 }
 
 /* ##### TABS ##################################### */
 
-/* Hide main tabs toolbar */
 #TabsToolbar {
 	margin-bottom: -1vh !important;
-	margin-top: 1vh !important;
 	margin-left: calc(30vw) !important;
 	margin-right: -4vw !important;
-	background-color: var(--bg) !important;
+	background-color: var(--bgnd) !important;
 	height: var(--tabheight) !important;
-	padding-top: 0vh !important;
 }
 
-.scrollbutton-up, .scrollbutton-down {
+.scrollbutton-up, 
+.scrollbutton-down 
+{
 	color: var(--accent) !important;
 }
 
 #nav-bar {
 	height: var(--tabheight) !important;
 	margin-top: -3vh !important;
-	margin-right:calc(70vw - 1px) !important;
-	background-color: var(--bg) !important;
+	margin-right:calc(70vw) !important;
+	background-color: var(--bgnd) !important;
 	box-shadow: none !important;
-}
-
-#main-window[sizemode="normal"] #nav-bar {
-	border-top-left-radius: 5px !important;
 }
 
 .tab-label { /* Why tho?? */
 	-moz-box-flex: 1 !important;
 	text-align: center !important;
-	color: var(--darkaccent) !important;
 }
 
 .tabbrowser-tab {
 	height: var(--tabheight) !important;
 	border: none !important;
-	background-color: var(--bg) !important;
+	color: var(--darkaccent) !important;
+	background-color: var(--bgnd) !important;
 }
 
 .tabbrowser-tab[selected] {
 	color: var(--accent) !important;
+	background-color: #333 !important;
 }
 
 /* ##### URL BAR ########################################## */
 #PanelUI-button,
 #customization-panel-container,
 #customization-panelWrapper .panel-arrow,
-#appMenu-popup {
+#appMenu-popup 
+{
 	-moz-box-ordinal-group: 0 !important;
 }
 
 /* Custom bindings.xml in same folder as userChrome, for simple URL */
 #urlbar {
 	-moz-binding: url("bindings.xml#urlbar") !important;
-	background-color: var(--fg) !important;
+	background-color: #333 !important;
 	color: var(--accent) !important;
 	border: none !important;
 	text-align: center !important;
@@ -94,12 +95,4 @@
 
 #urlbar-container {
 	min-width:20vw !important;
-}
-
-#navigator-toolbox {
-	margin-top: -.3vh !important;
-}
-
-.browserContainer {
-	margin-top: -1px !important;
 }
