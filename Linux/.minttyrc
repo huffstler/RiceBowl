@@ -1,0 +1,17 @@
+BoldAsFont=no
+Font=Iosevka Term
+FontHeight=12
+Rows=51
+Scrollbar=none
+CursorType=block
+Term=xterm-256color
+Locale=
+Charset=
+Language=en_US
+
+ThemeFile=acme.minttyrc
+BoldAsColour=no
+FontWeight=500
+FontSmoothing=default
+AllowBlinking=yes
+Transparency=off

@@ -1,0 +1,39 @@
+# Below config found at: https://github.com/mrzool/bash-sensible/blob/master/sensible.bash
+
+PROMPT_DIRTRIM=2
+
+#shopt -s cdspell
+shopt -s dotglob
+shopt -s nocaseglob
+set -o noclobber
+shopt -s checkwinsize
+#shopt -s autocd 2> /dev/null
+shopt -s completion_strip_exe
+#shopt -s dirspell 2> /dev/null
+#shopt -s cdspell 2> /dev/null
+
+#CDPATH=".:~:/cygdrive/c/Users/houg5318/Documents:"
+
+# Perform file completion in a case insensitive fashion
+bind "set completion-ignore-case on"
+
+# Treat hyphens and underscores as equivalent
+#bind "set completion-map-case on"
+
+# Display matches for ambiguous patterns at first tab press
+bind "set show-all-if-ambiguous on"
+
+# Immediately add a trailing slash when autocompleting symlinks to directories
+#bind "set mark-symlinked-directories on"
+
+# Don't record these commands in history
+export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
+
+branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+end="\e[0m"
+bold="\e[1m"
+it="\e[3m"
+export PS1="[\h $bold\w$end] $it\$(branch)$end\n ˃˃ "
