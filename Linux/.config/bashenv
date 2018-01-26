@@ -12,8 +12,6 @@ shopt -s completion_strip_exe
 #shopt -s dirspell 2> /dev/null
 #shopt -s cdspell 2> /dev/null
 
-#CDPATH=".:~:/cygdrive/c/Users/houg5318/Documents:"
-
 # Perform file completion in a case insensitive fashion
 bind "set completion-ignore-case on"
 
