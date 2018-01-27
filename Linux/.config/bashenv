@@ -35,3 +35,18 @@ end="\e[0m"
 bold="\e[1m"
 it="\e[3m"
 export PS1="[\h $bold\w$end] $it\$(branch)$end\n ˃˃ "
+
+# functions!
+
+# Since I'm terrible at bash scripting, I would like to thank {} for these!
+## Directory navigation ##
+
+u () {
+  for i in $(seq 1 ${1:-1}); do
+    cd ..
+  done
+}
+
+.. () {
+  u $@
+}
