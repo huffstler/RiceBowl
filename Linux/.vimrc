@@ -13,6 +13,13 @@ set t_8f=[38;2;%lu;%lu;%lum
 
 autocmd! FileType text set nonumber
 
+" Autodownload vim.plug if not currently installed
+if empty(glob('~/.vim/autoload/plug.vim'))
+	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+	\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 " Plugins
 call plug#begin('~/.vim/vplug')
     " Colors
