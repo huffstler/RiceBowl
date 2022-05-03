@@ -1,0 +1,32 @@
+{
+    "$schema" : https://aka.ms/winget-packages.schema.2.0.json,
+    "Sources" : [
+        {
+            "Packages" : [
+                { "PackageIdentifier" : "Valve.Steam" },
+                { "PackageIdentifier" : "GIMP.GIMP" },
+		{ "PackageIdentifier" : "Inkscape.Inkscape" },
+		{ "PackageIdentifier" : "Spotify.Spotify" },
+		{ "PackageIdentifier" : "7zip.7zip" },
+		{ "PackageIdentifier" : "Google.Drive" },
+		{ "PackageIdentifier" : "Git.Git" },
+		{ "PackageIdentifier" : "JohnMacFarlane.Pandoc" },
+		{ "PackageIdentifier" : "KeePassXCTeam.KeePassXC" },
+		{ "PackageIdentifier" : "Neovim.Neovim" },
+		{ "PackageIdentifier" : "Mozilla.Firefox" },
+		{ "PackageIdentifier" : "RaspberryPiFoundation.RaspberryPiImager" },
+		{ "PackageIdentifier" : "Microsoft.OneDrive" },
+		{ "PackageIdentifier" : "Microsoft.PowerShell" },
+		{ "PackageIdentifier" : "Microsoft.PowerToys" },
+		{ "PackageIdentifier" : "Microsoft.Terminal" }
+            ],
+            "SourceDetails" : {
+                "Argument" : https://winget.azureedge.net/cache,
+                "Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+                "Name" : "winget",
+                "Type" : "Microsoft.PreIndexed.Package"
+            }
+        }
+    ],
+    "WinGetVersion" : "1.2.10271"
+}
