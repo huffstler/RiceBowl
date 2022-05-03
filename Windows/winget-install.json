@@ -1,7 +1,6 @@
 {
-    "$schema" : https://aka.ms/winget-packages.schema.2.0.json,
+    "$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
     "Sources" : [
-        {
             "Packages" : [
                 { "PackageIdentifier" : "Valve.Steam" },
                 { "PackageIdentifier" : "GIMP.GIMP" },
@@ -21,12 +20,11 @@
 		{ "PackageIdentifier" : "Microsoft.Terminal" }
             ],
             "SourceDetails" : {
-                "Argument" : https://winget.azureedge.net/cache,
+                "Argument" : "https://winget.azureedge.net/cache",
                 "Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
                 "Name" : "winget",
                 "Type" : "Microsoft.PreIndexed.Package"
             }
-        }
     ],
     "WinGetVersion" : "1.2.10271"
 }
