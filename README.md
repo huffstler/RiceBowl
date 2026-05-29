@@ -1,4 +1,5 @@
-# Rice Bowl
-Collection of rice for all my devices.
+# dotfiles for all my devices
 
-Each folder corresponds to the device dotfiles it holds.
+##### Personal Configuration Collection
+
+Each folder corresponds to the device it applies to. Might group windows and linux eventually

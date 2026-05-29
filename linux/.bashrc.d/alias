@@ -1,0 +1,106 @@
+alias ll='ls -l'
+alias la='ls -lha'
+alias l='ls --color=auto -lt'
+alias lh='ls --color=auto -lAd .*'
+
+alias v='nvim'
+alias vi='nvim'
+alias vim='nvim'
+alias e='nvim'
+alias t='tmux'
+alias h='cat ~/.bashrc.d/alias'
+alias rl='source ~/.bashrc'
+alias md='mkdir'
+alias gl='git log --color=always --graph --oneline --decorate | less -R'
+
+alias egrc='v ~/.config/ghostty/config'
+
+.. () {
+  u $@
+}
+
+post(){
+	postpath="$HOME/dev/website/drafts/$1.md"
+	currDate=`date -I`
+	
+	sed "s/splog/$1/" "$HOME/dev/website/templates/skeleton-post.md" | sed "s/dte/$currDate/" >> "$postpath"
+
+	nvim "$postpath"
+}
+
+# Used in my Prompt. Outputs the current branch name
+curr_branch() {
+	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+# used to invoke sudo on previous command
+# Found here: https://unix.stackexchange.com/a/138368/253793
+# Stands for "FUCK, I forgot to sudo."
+fk() {
+	sudo "$SHELL" -c "$(fc -ln -1)"
+}
+
+# Up command.
+# Goes up the # of directories that you provide.
+u() {
+  local d=..
+  local limit=$1
+  for ((i = 1; i < limit; i++))
+  do
+    d=$d/..
+  done
+  cd $d || exit 1
+}
+
+# I'm probably never using this again, BUT it was useful while it lasted.
+# I rolled a couple podman commands into one,
+# prune -v removed unused volumes [DANGEROUS]
+# prune -c removed stopped and killed containers
+# prune -i removed untagged images
+prune () {
+    if [ $# -eq 0 ]
+    then
+        printf "You need to provide at least one argument to 'prune'. -c , -i , -v"
+        exit 1
+    # Containers
+    elif [ "$1" = "-c" ]
+    then
+       podman container prune
+    # Images
+    # Thanks to: http://jimhoskins.com/2013/07/27/remove-untagged-podman-images.html
+    elif [ "$1" = "-i" ]
+    then
+        podman rmi $(podman images | grep none | awk '{print $3}')
+    # Volumes
+    elif [ "$1" = "-v" ]
+    then
+        podman volume prune
+    else
+        printf "Argument could not be recognized"
+    fi
+}
+
+# Automatically update git repository refs when you cd to the root of it.
+# DOESN'T MERGE, ONLY FETCHES
+# I've added smart_cd as an alias to cd in my dotfiles
+# This way I always know if there are changes
+# smart_cd () {
+#     cd "$@"
+#     if [[ -d .git ]];then
+#         git fetch
+#     fi
+# }
+
+# Acronym: [G]o [I]nto [V]olume
+# Would have been Go To Volume, but that all involves the left hand for typing (on qwerty at least)
+# Might not even work as is, user needs read permissions for where podman volumes are stored.
+giv () {
+    if [[ ! $(podman volume ls --format="{{.Name}}") =~ $volume ]]; then
+        echo "Provided volume doesn't exist."
+        exit 1
+    else
+        dir=$(podman volume inspect $1 --format '{{.Mountpoint}}')
+        cd "$dir"
+    fi
+}
+

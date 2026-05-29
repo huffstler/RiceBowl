@@ -1,0 +1,33 @@
+# Below config found at: https://github.com/mrzool/bash-sensible/blob/master/sensible.bash
+
+#PROMPT_DIRTRIM=2
+
+shopt -s dotglob
+shopt -s nocaseglob
+shopt -s checkwinsize
+shopt -s histappend
+set -o noclobber
+
+# Perform file completion in a case insensitive fashion
+bind "set completion-ignore-case on"
+
+# Display matches for ambiguous patterns at first tab press
+bind "set show-all-if-ambiguous on"
+
+# Don't record these commands in history
+export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
+
+# branch() {
+#      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+# }
+
+EDITOR=/usr/bin/nvim
+
+# end="\e[0m"
+# bold="\e[1m"
+# it="\e[3m"
+# export PS1="[\h $bold\w$end] $it\$(branch)$end\n >> "
+
+complete -o default java
+
+eval "$(fzf --bash)"
